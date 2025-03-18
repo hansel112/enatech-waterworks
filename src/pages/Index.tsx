@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
 import ServiceCard from '@/components/ServiceCard';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Droplet, Sun, Plant, Factory, HardHat, Briefcase } from 'lucide-react';
+import { ArrowRight, Droplet, Sun, Leaf, Factory, HardHat, Briefcase } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Index = () => {
@@ -44,7 +44,7 @@ const Index = () => {
       link: "/services#solar-pumping"
     },
     {
-      icon: <Plant size={28} />,
+      icon: <Leaf size={28} />,
       title: "Agricultural Advisory",
       description: "Expert agricultural consultancy services to optimize water usage and improve crop yields.",
       link: "/services#agricultural-advisory"

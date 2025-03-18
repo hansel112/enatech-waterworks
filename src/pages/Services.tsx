@@ -1,9 +1,8 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
 import { Button } from '@/components/ui/button';
-import { Droplet, Sun, Plant, Factory, HardHat, Briefcase, ArrowRight, Check } from 'lucide-react';
+import { Droplet, Sun, Leaf, Factory, HardHat, Briefcase, ArrowRight, Check } from 'lucide-react';
 
 const Services = () => {
   // Animation utility
@@ -81,7 +80,7 @@ const Services = () => {
     },
     {
       id: "agricultural-advisory",
-      icon: <Plant size={32} />,
+      icon: <Leaf size={32} />,
       title: "Agricultural Advisory",
       subtitle: "Optimize water use for better yields",
       description: "Our agricultural advisory services help farmers and agricultural businesses optimize water usage, improve irrigation efficiency, and implement sustainable water management practices.",
