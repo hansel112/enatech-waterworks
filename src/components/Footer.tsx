@@ -85,16 +85,30 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin size={20} className="text-enatech-blue-dark mr-3 mt-1" />
-                <span className="text-gray-600">123 Water Street, Eco City, Earth 12345</span>
+                <a 
+                  href="https://maps.app.goo.gl/oDh3jT3YdW8eEKkn6?g_st=aw" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-600 hover:text-enatech-blue-dark"
+                >
+                  Kampala, Uganda
+                </a>
               </li>
-              <li className="flex items-center">
-                <Phone size={20} className="text-enatech-blue-dark mr-3" />
-                <span className="text-gray-600">+1 (555) 123-4567</span>
+              <li className="flex items-start">
+                <Phone size={20} className="text-enatech-blue-dark mr-3 mt-1" />
+                <div className="flex flex-col">
+                  <a href="tel:+25670617998" className="text-gray-600 hover:text-enatech-blue-dark">
+                    +256 706 179 98
+                  </a>
+                  <a href="tel:+256785778171" className="text-gray-600 hover:text-enatech-blue-dark">
+                    +256 785 778 171
+                  </a>
+                </div>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="text-enatech-blue-dark mr-3" />
-                <a href="mailto:info@enatech.com" className="text-gray-600 hover:text-enatech-blue-dark">
-                  info@enatech.com
+                <a href="mailto:enatechcoltd@gmail.com" className="text-gray-600 hover:text-enatech-blue-dark">
+                  enatechcoltd@gmail.com
                 </a>
               </li>
             </ul>

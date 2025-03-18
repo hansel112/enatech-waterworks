@@ -51,17 +51,18 @@ const Contact = () => {
     {
       icon: <MapPin size={24} />,
       title: "Our Location",
-      details: ["123 Water Street", "Eco City, Earth 12345"]
+      details: ["Kampala, Uganda"],
+      link: "https://maps.app.goo.gl/oDh3jT3YdW8eEKkn6?g_st=aw"
     },
     {
       icon: <Phone size={24} />,
       title: "Phone Number",
-      details: ["+1 (555) 123-4567", "+1 (555) 765-4321"]
+      details: ["+256 706 179 98", "+256 785 778 171"]
     },
     {
       icon: <Mail size={24} />,
       title: "Email Address",
-      details: ["info@enatech.com", "support@enatech.com"]
+      details: ["enatechcoltd@gmail.com"]
     },
     {
       icon: <Clock size={24} />,
@@ -109,7 +110,18 @@ const Contact = () => {
                       <h3 className="text-lg font-medium text-gray-800 mb-2">{item.title}</h3>
                       {item.details.map((detail, i) => (
                         <p key={i} className="text-gray-600">
-                          {detail}
+                          {item.link && i === 0 ? (
+                            <a 
+                              href={item.link} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="hover:text-enatech-blue-dark"
+                            >
+                              {detail}
+                            </a>
+                          ) : (
+                            detail
+                          )}
                         </p>
                       ))}
                     </div>
@@ -147,7 +159,7 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* Map Section (Placeholder) */}
+      {/* Map Section */}
       <section className="py-20 bg-enatech-gray-light">
         <div className="container-custom">
           <AnimatedElement>
@@ -156,19 +168,24 @@ const Contact = () => {
                 Visit Our Office
               </h2>
               <p className="text-gray-600">
-                We're conveniently located in the heart of Eco City. Feel free to visit us during business hours.
+                We're conveniently located in Kampala, Uganda. Feel free to visit us during business hours.
               </p>
             </div>
           </AnimatedElement>
           
           <AnimatedElement delay={200}>
             <div className="bg-white p-2 rounded-xl shadow-sm overflow-hidden h-[400px]">
-              {/* This would typically be a Google Maps iframe or similar */}
-              <div className="bg-enatech-blue-light h-full w-full flex items-center justify-center">
-                <p className="text-enatech-blue-dark text-lg font-medium">
-                  Interactive Map Would Be Displayed Here
-                </p>
-              </div>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.7646339651864!2d32.5875121!3d0.3112077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMTgnNDAuNCJOIDMywrAzNScxNS4wIkU!5e0!3m2!1sen!2sus!4v1715963608985!5m2!1sen!2sus" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="ENATECH Office Location"
+                className="rounded-lg"
+              ></iframe>
             </div>
           </AnimatedElement>
         </div>
