@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
 import ServiceCard from '@/components/ServiceCard';
 import ProductSlideCard from '@/components/ProductSlideCard';
+import ReviewCard from '@/components/ReviewCard';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Droplet, Sun, Leaf, Factory, HardHat, Briefcase } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -107,6 +108,38 @@ const Index = () => {
       description: "Precise measurement instruments for monitoring water flow in agricultural and industrial applications.",
       imageSrc: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
       link: "/products#measurement"
+    }
+  ];
+
+  // Reviews data
+  const reviews = [
+    {
+      name: "Michael Thompson",
+      role: "Farm Owner",
+      content: "ENATECH's solar water pumping system has reduced our energy costs by 60% and improved our irrigation efficiency significantly. Their team was professional and knowledgeable throughout the installation process.",
+      rating: 5,
+      imageSrc: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      name: "Sarah Johnson",
+      role: "Environmental Consultant",
+      content: "The water quality testing services provided by ENATECH were comprehensive and delivered with exceptional attention to detail. They identified issues we had missed for years.",
+      rating: 5,
+      imageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      name: "David Rodriguez",
+      role: "Municipal Water Manager",
+      content: "Working with ENATECH on our water treatment upgrade project was a seamless experience. Their engineering team provided innovative solutions that saved our city both money and resources.",
+      rating: 4,
+      imageSrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      name: "Emily Chen",
+      role: "Sustainability Director",
+      content: "The agricultural advisory services from ENATECH transformed our approach to water conservation. Their expertise in sustainable farming practices has been invaluable to our organization.",
+      rating: 5,
+      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
     }
   ];
 
@@ -349,6 +382,51 @@ const Index = () => {
               <Button asChild variant="outline" className="border-enatech-blue text-enatech-blue hover:bg-enatech-blue-light hover:text-enatech-blue-dark group">
                 <Link to="/products">
                   View All Products
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </Button>
+            </div>
+          </AnimatedElement>
+        </div>
+      </section>
+      
+      {/* Reviews Section */}
+      <section className="py-20 bg-enatech-gray-light">
+        <div className="container-custom">
+          <AnimatedElement>
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-enatech-blue font-medium px-4 py-1.5 bg-enatech-blue-light rounded-full text-sm">
+                Client Testimonials
+              </span>
+              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mt-4 mb-6">
+                What Our Clients Say
+              </h2>
+              <p className="text-gray-600">
+                Discover how our water resource solutions have made a difference for businesses, 
+                municipalities, and agricultural operations worldwide.
+              </p>
+            </div>
+          </AnimatedElement>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {reviews.map((review, index) => (
+              <AnimatedElement key={review.name} delay={100 + (index * 100)}>
+                <ReviewCard
+                  name={review.name}
+                  role={review.role}
+                  content={review.content}
+                  rating={review.rating}
+                  imageSrc={review.imageSrc}
+                />
+              </AnimatedElement>
+            ))}
+          </div>
+          
+          <AnimatedElement delay={600}>
+            <div className="mt-12 text-center">
+              <Button asChild variant="outline" className="border-enatech-blue text-enatech-blue hover:bg-enatech-blue-light hover:text-enatech-blue-dark group">
+                <Link to="/about#testimonials">
+                  View All Testimonials
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
