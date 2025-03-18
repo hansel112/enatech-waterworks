@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
@@ -7,7 +6,7 @@ import {
   ArrowRight, 
   Check, 
   Droplet, 
-  Flask, 
+  BeakerIcon, 
   Gauge, 
   Package, 
   Filter, 
@@ -87,7 +86,7 @@ const Products = () => {
             "Comprehensive instruction manual",
             "Suitable for both professionals and beginners"
           ],
-          icon: <Flask size={24} />
+          icon: <BeakerIcon size={24} />
         },
         {
           name: "Digital Water Quality Meter",
