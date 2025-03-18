@@ -53,7 +53,7 @@ const Index = () => {
       icon: <Factory size={28} />,
       title: "Products & Equipment",
       description: "High-quality water management equipment and products for all your water-related needs.",
-      link: "/services#equipment"
+      link: "/products"
     },
     {
       icon: <HardHat size={28} />,

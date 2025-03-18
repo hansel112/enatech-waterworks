@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
 import { Button } from '@/components/ui/button';
-import { Droplet, Sun, Leaf, Factory, HardHat, Briefcase, ArrowRight, Check } from 'lucide-react';
+import { Droplet, Sun, Leaf, HardHat, Briefcase, ArrowRight, Check } from 'lucide-react';
 
 const Services = () => {
   // Animation utility
@@ -92,21 +92,6 @@ const Services = () => {
         "Training and capacity building"
       ],
       image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843"
-    },
-    {
-      id: "equipment",
-      icon: <Factory size={32} />,
-      title: "Products & Equipment",
-      subtitle: "High-quality water management equipment",
-      description: "We supply a comprehensive range of water management equipment and products, from water quality testing kits to advanced pumping systems, filtration units, and monitoring devices.",
-      features: [
-        "Water quality testing equipment",
-        "Pumping and distribution systems",
-        "Water treatment and filtration units",
-        "Monitoring and control devices",
-        "Irrigation equipment and accessories"
-      ],
-      image: "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3"
     },
     {
       id: "engineering",
