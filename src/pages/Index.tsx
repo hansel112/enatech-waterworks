@@ -1,11 +1,18 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
 import ServiceCard from '@/components/ServiceCard';
+import ProductSlideCard from '@/components/ProductSlideCard';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Droplet, Sun, Leaf, Factory, HardHat, Briefcase } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Index = () => {
   // Stats animation
@@ -66,6 +73,40 @@ const Index = () => {
       title: "Consulting Services",
       description: "Strategic consulting for organizations looking to optimize their water management practices.",
       link: "/services#consulting"
+    }
+  ];
+
+  // Product slider data
+  const featuredProducts = [
+    {
+      title: "Water Quality Testing Kit",
+      description: "Comprehensive testing kit for measuring pH, hardness, chlorine, and other critical water parameters.",
+      imageSrc: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      link: "/products#testing-kits"
+    },
+    {
+      title: "Solar Water Pump System",
+      description: "Energy-efficient solar-powered pumping solutions for agriculture and domestic water supply.",
+      imageSrc: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      link: "/products#pumping-systems"
+    },
+    {
+      title: "Irrigation Controllers",
+      description: "Smart irrigation controllers that optimize water usage based on weather conditions and soil moisture.",
+      imageSrc: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      link: "/products#irrigation"
+    },
+    {
+      title: "Water Treatment Systems",
+      description: "Advanced filtration and purification systems for clean, safe water in any environment.",
+      imageSrc: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
+      link: "/products#treatment-systems"
+    },
+    {
+      title: "Water Flow Meters",
+      description: "Precise measurement instruments for monitoring water flow in agricultural and industrial applications.",
+      imageSrc: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
+      link: "/products#measurement"
     }
   ];
 
@@ -249,6 +290,65 @@ const Index = () => {
               <Button asChild variant="outline" className="border-enatech-blue text-enatech-blue hover:bg-enatech-blue-light hover:text-enatech-blue-dark group">
                 <Link to="/services">
                   View All Services
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </Button>
+            </div>
+          </AnimatedElement>
+        </div>
+      </section>
+      
+      {/* Products Slider Section */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <AnimatedElement>
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-enatech-blue font-medium px-4 py-1.5 bg-enatech-blue-light rounded-full text-sm">
+                Our Products
+              </span>
+              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mt-4 mb-6">
+                Cutting-Edge Equipment & Solutions
+              </h2>
+              <p className="text-gray-600">
+                Explore our range of high-quality water management equipment and solutions designed to meet diverse needs across industries.
+              </p>
+            </div>
+          </AnimatedElement>
+          
+          <AnimatedElement delay={200}>
+            <div className="relative px-4 sm:px-8 md:px-12">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent>
+                  {featuredProducts.map((product, index) => (
+                    <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                      <ProductSlideCard
+                        title={product.title}
+                        description={product.description}
+                        imageSrc={product.imageSrc}
+                        link={product.link}
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <div className="hidden sm:block">
+                  <CarouselPrevious className="left-1" />
+                  <CarouselNext className="right-1" />
+                </div>
+              </Carousel>
+            </div>
+          </AnimatedElement>
+          
+          <AnimatedElement delay={400}>
+            <div className="mt-12 text-center">
+              <Button asChild variant="outline" className="border-enatech-blue text-enatech-blue hover:bg-enatech-blue-light hover:text-enatech-blue-dark group">
+                <Link to="/products">
+                  View All Products
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
