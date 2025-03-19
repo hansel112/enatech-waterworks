@@ -1,3 +1,4 @@
+
 import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
@@ -9,7 +10,10 @@ import { Button } from "@/components/ui/button"
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
-type CarouselOptions = UseCarouselParameters[0]
+type CarouselOptions = UseCarouselParameters[0] & {
+  autoplay?: boolean
+  interval?: number
+}
 type CarouselPlugin = UseCarouselParameters[1]
 
 type CarouselProps = {
@@ -56,13 +60,17 @@ const Carousel = React.forwardRef<
     },
     ref
   ) => {
+    // Extract autoplay options before passing to embla
+    const { autoplay, interval, ...emblaOpts } = opts || {}
+    
     const [carouselRef, api] = useEmblaCarousel(
       {
-        ...opts,
+        ...emblaOpts,
         axis: orientation === "horizontal" ? "x" : "y",
       },
       plugins
     )
+    
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
 
@@ -82,6 +90,21 @@ const Carousel = React.forwardRef<
     const scrollNext = React.useCallback(() => {
       api?.scrollNext()
     }, [api])
+
+    // Auto-scrolling functionality
+    React.useEffect(() => {
+      if (!api || !autoplay) return
+      
+      const intervalId = setInterval(() => {
+        if (api.canScrollNext()) {
+          api.scrollNext()
+        } else {
+          api.scrollTo(0) // Reset to first slide if at the end
+        }
+      }, interval || 5000)
+      
+      return () => clearInterval(intervalId)
+    }, [api, autoplay, interval])
 
     const handleKeyDown = React.useCallback(
       (event: React.KeyboardEvent<HTMLDivElement>) => {
@@ -125,7 +148,7 @@ const Carousel = React.forwardRef<
           api: api,
           opts,
           orientation:
-            orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
+            orientation || (emblaOpts?.axis === "y" ? "vertical" : "horizontal"),
           scrollPrev,
           scrollNext,
           canScrollPrev,

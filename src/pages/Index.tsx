@@ -354,6 +354,8 @@ const Index = () => {
                 opts={{
                   align: "start",
                   loop: true,
+                  autoplay: true,
+                  interval: 5000,
                 }}
                 className="w-full"
               >
