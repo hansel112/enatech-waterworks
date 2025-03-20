@@ -68,12 +68,14 @@ const Navbar = () => {
         {/* Logo */}
         <Link 
           to="/" 
-          className="flex items-center space-x-2"
+          className="flex items-center"
           aria-label="ENATECH - Home"
         >
-          <span className="font-serif font-bold text-2xl text-enatech-blue-dark">
-            ENA<span className="text-enatech-green-dark">TECH</span>
-          </span>
+          <img 
+            src="/lovable-uploads/fab80403-90d5-4fe5-a3ab-d4b4abcc30be.png" 
+            alt="ENATECH Logo" 
+            className="h-10" 
+          />
         </Link>
 
         {/* Desktop Navigation */}
