@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -10,7 +9,6 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -24,7 +22,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu when route changes
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location.pathname]);
@@ -65,7 +62,6 @@ const Navbar = () => {
       )}
     >
       <div className="container-custom flex justify-between items-center">
-        {/* Logo */}
         <Link 
           to="/" 
           className="flex items-center"
@@ -74,11 +70,10 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/fab80403-90d5-4fe5-a3ab-d4b4abcc30be.png" 
             alt="ENATECH Logo" 
-            className="h-24 w-auto" 
+            className="h-32 w-auto" 
           />
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-1">
           {navLinks.map((link) => (
             <NavLink key={link.name} name={link.name} path={link.path} />
@@ -91,7 +86,6 @@ const Navbar = () => {
           </Button>
         </nav>
 
-        {/* Mobile Menu Button */}
         <Button 
           variant="ghost" 
           size="icon" 
@@ -103,7 +97,6 @@ const Navbar = () => {
         </Button>
       </div>
 
-      {/* Mobile Navigation */}
       <div 
         className={cn(
           "fixed inset-0 top-[57px] bg-white z-40 transform transition-transform duration-300 ease-in-out md:hidden",
