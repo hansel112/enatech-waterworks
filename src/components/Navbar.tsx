@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -73,7 +74,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/fab80403-90d5-4fe5-a3ab-d4b4abcc30be.png" 
             alt="ENATECH Logo" 
-            className="h-16 w-auto" 
+            className="h-24 w-auto" 
           />
         </Link>
 
