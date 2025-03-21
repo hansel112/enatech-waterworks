@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -48,12 +47,11 @@ const ContactForm = () => {
       to_email: 'enatechcoltd@gmail.com' // Ensure recipient email is included
     };
     
-    // Send email using EmailJS with the updated method signature
+    // Send email using EmailJS
     emailjs.send(
       EMAILJS_SERVICE_ID,
       EMAILJS_TEMPLATE_ID,
-      templateParams,
-      EMAILJS_PUBLIC_KEY // Use public key here
+      templateParams
     )
     .then((response) => {
       console.log('Email sent successfully:', response);
