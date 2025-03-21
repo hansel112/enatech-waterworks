@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -8,10 +9,9 @@ import emailjs from 'emailjs-com';
 
 // EmailJS configuration
 // Note: You need to create a free EmailJS account and set up a service pointing to enatechcoltd@gmail.com
-// Then update these IDs with your actual EmailJS service, template, and user IDs
-const EMAILJS_SERVICE_ID = 'service_wk90cii';
-const EMAILJS_TEMPLATE_ID = 'template_4xkmvjm';
-const EMAILJS_PUBLIC_KEY = 'ZOBbxGlzINvmSFNTx'; // This should be your public key, not user ID
+const EMAILJS_SERVICE_ID = 'service_tbfvjlq';
+const EMAILJS_TEMPLATE_ID = 'template_csvghkb'; // Using the Contact Us Template ID
+const EMAILJS_PUBLIC_KEY = 'STBpc4qHTdux_kOh8'; // Your public key
 
 // Initialize EmailJS with your public key
 emailjs.init(EMAILJS_PUBLIC_KEY);
@@ -53,7 +53,7 @@ const ContactForm = () => {
       EMAILJS_SERVICE_ID,
       EMAILJS_TEMPLATE_ID,
       templateParams,
-      EMAILJS_PUBLIC_KEY // Use public key here instead of user ID
+      EMAILJS_PUBLIC_KEY // Use public key here
     )
     .then((response) => {
       console.log('Email sent successfully:', response);
