@@ -33,7 +33,7 @@ const ProductSlideCard: React.FC<ProductSlideCardProps> = ({
           <h3 className="text-xl font-serif font-semibold text-white mb-3">{title}</h3>
           <Button 
             asChild 
-            className="bg-enatech-blue hover:bg-enatech-blue-dark group w-auto text-xs py-1 h-8 px-3"
+            className="bg-enatech-blue hover:bg-enatech-blue-dark group w-auto text-xs py-1 h-7 px-2"
           >
             <Link to={link}>
               View Details

@@ -1,8 +1,9 @@
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
 import { Button } from '@/components/ui/button';
-import { Droplet, Sun, Leaf, HardHat, Briefcase, ArrowRight, Check } from 'lucide-react';
+import { Droplet, Sun, Leaf, Check, ArrowRight } from 'lucide-react';
 
 const Services = () => {
   // Animation utility
@@ -46,82 +47,47 @@ const Services = () => {
     );
   };
   
-  // Detailed service data
+  // Updated services data with only the 3 specified services
   const services = [
     {
       id: "water-quality",
       icon: <Droplet size={32} />,
-      title: "Water Quality Testing",
-      subtitle: "Comprehensive analysis for all water sources",
-      description: "Our water quality testing services provide accurate, reliable analysis of water sources for various applications including drinking water, irrigation, industrial use, and environmental monitoring.",
+      title: "Smart Digital Water Quality Testing",
+      subtitle: "Advanced real-time monitoring solutions",
+      description: "We offer advanced, real-time water quality monitoring using smart digital tools and IoT-bluetooth enabled devices. Our testing systems provide instant and accurate analysis of key water parameters, ensuring early detection of contaminants and enabling proactive water management.",
       features: [
-        "Complete chemical and biological analysis",
-        "On-site testing and laboratory services",
-        "Regulatory compliance monitoring",
-        "Customized testing protocols",
-        "Detailed reporting and recommendations"
+        "Real-time data access and remote monitoring",
+        "Customizable alerts and reporting",
+        "Compliance with local and international water quality standards"
       ],
       image: "https://images.unsplash.com/photo-1504893524553-b855bce32c67"
     },
     {
-      id: "solar-pumping",
+      id: "water-treatment",
       icon: <Sun size={32} />,
-      title: "Solar Water Pumping",
-      subtitle: "Sustainable water access solutions",
-      description: "We design and implement solar-powered water pumping systems that provide reliable, eco-friendly water access for agricultural, community, and commercial applications, even in remote locations.",
+      title: "Water Treatment Solutions",
+      subtitle: "Comprehensive treatment for all water needs",
+      description: "Our comprehensive water treatment services cater to domestic, commercial, and agricultural needs. We specialize in the design, installation and maintenance of Online Chemical Dosing Pumps for real time, automated water treatment across various applications.",
       features: [
-        "Custom system design and sizing",
-        "High-efficiency solar panels and pumps",
-        "Battery storage options for 24/7 operation",
-        "Remote monitoring capabilities",
-        "Professional installation and maintenance"
+        "Online Dosing Pumps for Disinfection, PH Control, and Scaling Prevention",
+        "Maintenance and Technical Support",
+        "Cost-Effective and Sustainable Treatment Solutions"
       ],
       image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
     },
     {
       id: "agricultural-advisory",
       icon: <Leaf size={32} />,
-      title: "Agricultural Advisory",
-      subtitle: "Optimize water use for better yields",
-      description: "Our agricultural advisory services help farmers and agricultural businesses optimize water usage, improve irrigation efficiency, and implement sustainable water management practices.",
+      title: "Agricultural Advisory Services",
+      subtitle: "Expert guidance for sustainable farming",
+      description: "We empower farmers and agribusinesses with expert guidance on water-efficient irrigation, soil health, and crop management. By integrating water analytics with agronomic expertise, we help optimize yield, reduce water waste, and promote sustainable farming practices.",
       features: [
-        "Irrigation system assessment and optimization",
-        "Water conservation strategies",
-        "Crop-specific water management plans",
-        "Soil moisture monitoring solutions",
-        "Training and capacity building"
+        "Smart irrigation planning",
+        "Solar Water Pumping Systems",
+        "Sustainable Water Use Strategies",
+        "Training and Capacity Building for Farmers"
       ],
       image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843"
-    },
-    {
-      id: "engineering",
-      icon: <HardHat size={32} />,
-      title: "Engineering Services",
-      subtitle: "Expert solutions for water challenges",
-      description: "Our engineering services cover all aspects of water resources planning, design, and implementation, from small-scale projects to comprehensive water management systems for communities and industries.",
-      features: [
-        "Water resource assessment and planning",
-        "System design and modeling",
-        "Project management and implementation",
-        "Technical documentation and reporting",
-        "Quality assurance and compliance"
-      ],
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e"
-    },
-    {
-      id: "consulting",
-      icon: <Briefcase size={32} />,
-      title: "Consulting Services",
-      subtitle: "Strategic water management guidance",
-      description: "Our consulting services provide expert guidance on water management strategies, policy development, and long-term planning for organizations, governments, and development agencies.",
-      features: [
-        "Water strategy development",
-        "Policy guidance and development",
-        "Sustainability assessments",
-        "Risk analysis and management",
-        "Stakeholder engagement and training"
-      ],
-      image: "https://images.unsplash.com/photo-1426604966848-d7adac402bff"
     }
   ];
 
@@ -143,7 +109,7 @@ const Services = () => {
       {/* Hero Section */}
       <HeroSection 
         title="Our Services"
-        subtitle="Comprehensive water resource solutions for every need"
+        subtitle="Smart solutions for water quality, treatment, and agricultural advisory"
         backgroundImage="https://images.unsplash.com/photo-1501854140801-50d01698950b"
         size="medium"
       />
@@ -157,11 +123,11 @@ const Services = () => {
                 What We Offer
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mt-4 mb-6">
-                Comprehensive Water Resource Solutions
+                Smart Water Resource Solutions
               </h2>
               <p className="text-gray-600">
-                From water quality testing to solar pumping systems, agricultural advisory services, 
-                and professional engineering consulting, we provide end-to-end solutions for all water resource needs.
+                We provide innovative services for water quality testing, water treatment, 
+                and agricultural advisory to help you manage water resources efficiently and sustainably.
               </p>
             </div>
           </AnimatedElement>
@@ -189,7 +155,7 @@ const Services = () => {
                       </p>
                       
                       <div className="space-y-3 pt-4">
-                        <h4 className="font-medium text-gray-800">What We Provide:</h4>
+                        <h4 className="font-medium text-gray-800">Key Features:</h4>
                         <ul className="space-y-2">
                           {service.features.map((feature, i) => (
                             <li key={i} className="flex items-start">

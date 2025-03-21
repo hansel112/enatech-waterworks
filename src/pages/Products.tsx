@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
@@ -7,10 +8,8 @@ import {
   Check, 
   Droplet, 
   BeakerIcon, 
-  Gauge, 
-  Package, 
-  Filter, 
-  PipetteIcon
+  Filter,
+  Sun
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -58,128 +57,117 @@ const Products = () => {
     );
   };
 
-  // Product categories and items
+  // Updated product categories and items based on specified products
   const productCategories = [
     {
-      id: "testing-equipment",
-      title: "Water Testing Equipment",
-      description: "Professional equipment for accurate water quality analysis in field and laboratory settings.",
+      id: "testing-kits",
+      title: "Water Testing Kits",
+      description: "Professional water testing kits for accurate water quality analysis in various settings.",
       image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d",
       products: [
         {
-          name: "Portable Water Quality Analyzer",
-          description: "Comprehensive water testing device for pH, conductivity, dissolved oxygen, and temperature measurement.",
+          name: "5-Way Water Check Eco Packs (NCW-480115) (W4H)",
+          description: "Comprehensive water testing kit for 5 essential water parameters.",
           features: [
-            "Real-time data collection",
-            "Waterproof design for field use",
-            "Rechargeable battery with 12+ hours runtime",
-            "Digital display with data storage"
+            "Tests for 5 critical water parameters",
+            "Easy to use with quick results",
+            "Eco-friendly packaging",
+            "Ideal for home and light commercial use"
           ],
           icon: <Droplet size={24} />
         },
         {
-          name: "Multi-Parameter Testing Kit",
-          description: "Complete kit for testing 12 critical water parameters including heavy metals and contaminants.",
+          name: "Free & Total Chlorine Eco Packs (NCW-480655-W4H)",
+          description: "Specialized kit for measuring both free and total chlorine levels in water.",
           features: [
-            "Color-changing reagents for visual analysis",
-            "Carry case with all necessary tools",
-            "Comprehensive instruction manual",
-            "Suitable for both professionals and beginners"
+            "Accurate chlorine measurement",
+            "Environmentally friendly design",
+            "Complete with all testing supplies",
+            "Simple color-matching system"
           ],
           icon: <BeakerIcon size={24} />
         },
         {
-          name: "Digital Water Quality Meter",
-          description: "High-precision digital device for measuring TDS, EC, and temperature in water sources.",
+          name: "Free Chlorine Water Check (NCW-481026-W4H)",
+          description: "Focused test kit for free chlorine levels in drinking water and pools.",
           features: [
-            "Auto-calibration functionality",
-            "0.1 mg/L resolution",
-            "Data logging capabilities",
-            "Compact pocket design"
+            "Precise free chlorine measurement",
+            "Quick results within minutes",
+            "Easy-to-read color chart",
+            "Multiple tests per package"
           ],
-          icon: <Gauge size={24} />
+          icon: <Filter size={24} />
         }
       ]
     },
     {
-      id: "pumping-systems",
-      title: "Water Pumping Systems",
-      description: "Efficient and reliable pumping solutions powered by solar energy for various applications.",
-      image: "https://images.unsplash.com/photo-1604213410393-89f7e38d77c3",
-      products: [
-        {
-          name: "Solar Submersible Pump Package",
-          description: "Complete solar-powered pumping system designed for deep wells and boreholes.",
-          features: [
-            "Stainless steel construction",
-            "High-efficiency brushless DC motor",
-            "Solar panels with mounting structure",
-            "Controller with MPPT technology"
-          ],
-          icon: <Package size={24} />
-        },
-        {
-          name: "Surface Solar Pump Kit",
-          description: "Solar surface pump ideal for irrigation, livestock watering, and water transfer applications.",
-          features: [
-            "Self-priming up to 6 meters",
-            "Flow rates up to 40 liters/minute",
-            "Modular design for easy maintenance",
-            "Optional battery backup system"
-          ],
-          icon: <Package size={24} />
-        },
-        {
-          name: "Solar Pump Controller",
-          description: "Advanced controller for optimizing solar pump performance and protecting system components.",
-          features: [
-            "Automatic speed adjustment",
-            "Dry run protection",
-            "Low voltage disconnect",
-            "Digital display with system diagnostics"
-          ],
-          icon: <Gauge size={24} />
-        }
-      ]
-    },
-    {
-      id: "treatment-systems",
-      title: "Water Treatment Systems",
-      description: "Filtration and purification solutions for delivering clean, safe water for various applications.",
+      id: "home-testing",
+      title: "Home Water Testing Solutions",
+      description: "Complete testing solutions for residential water quality monitoring.",
       image: "https://images.unsplash.com/photo-1527689638836-411945a2b57c",
       products: [
         {
-          name: "Compact Filtration System",
-          description: "Multi-stage water filtration system for household and small community use.",
+          name: "ITS Complete Home Water Quality Test Kit (NCW-481199)",
+          description: "Comprehensive home test kit that covers all essential water quality parameters.",
           features: [
-            "Sediment, carbon, and UF membrane filtration",
-            "99.9% bacteria and virus removal",
-            "Easy-to-replace filter cartridges",
-            "Wall-mountable compact design"
+            "Tests for multiple contaminants",
+            "Complete with detailed instructions",
+            "Lab-grade accuracy for home use",
+            "Includes water quality guide"
           ],
-          icon: <Filter size={24} />
+          icon: <BeakerIcon size={24} />
         },
         {
-          name: "UV Purification Unit",
-          description: "Ultra-violet water purification system for effectively eliminating microbial contaminants.",
+          name: "Safe Well Check Home Well Water Test Kit (NCW-487941)",
+          description: "Specialized kit designed specifically for testing private well water quality.",
           features: [
-            "254nm UV wavelength for optimal disinfection",
-            "Low power consumption",
-            "Flow rates suitable for homes or small businesses",
-            "Lamp life indicator and replacement alert"
+            "Targets well-specific contaminants",
+            "Tests for bacteria and chemicals",
+            "Simple testing procedure",
+            "Detailed results interpretation guide"
           ],
-          icon: <PipetteIcon size={24} />
+          icon: <Droplet size={24} />
         },
         {
-          name: "Reverse Osmosis System",
-          description: "Advanced RO system for removing dissolved solids, chemicals, and impurities from water.",
+          name: "ITS Water Quality Test Kit (NCW-487986)",
+          description: "Professional-grade water quality testing kit with comprehensive parameter coverage.",
           features: [
-            "5-stage filtration process",
-            "High recovery rate to minimize waste",
-            "Automatic flush system",
-            "Modular design for easy servicing"
+            "Wide range of water quality indicators",
+            "Professional accuracy standards",
+            "Reusable components where possible",
+            "Digital result recording options"
           ],
           icon: <Filter size={24} />
+        }
+      ]
+    },
+    {
+      id: "specialized-testing",
+      title: "Specialized Testing Equipment",
+      description: "Specialized equipment for specific water testing applications.",
+      image: "https://images.unsplash.com/photo-1604213410393-89f7e38d77c3",
+      products: [
+        {
+          name: "Pool Check 3in1 Eco pack (NCW-484335)",
+          description: "Specialized test kit for pool and spa water, measuring Total Alkalinity, Free Chlorine/Bromine & pH.",
+          features: [
+            "3-in-1 testing capability",
+            "Eco-friendly packaging",
+            "Perfect for pool maintenance",
+            "Clear color-coded results"
+          ],
+          icon: <BeakerIcon size={24} />
+        },
+        {
+          name: "UV Light (NCW-487199)",
+          description: "UV light for specialized water quality testing and verification procedures.",
+          features: [
+            "Portable UV light source",
+            "Battery powered for field use",
+            "Detects fluorescent markers",
+            "Durable construction"
+          ],
+          icon: <Sun size={24} />
         }
       ]
     }
@@ -190,7 +178,7 @@ const Products = () => {
       {/* Hero Section */}
       <HeroSection 
         title="Products & Equipment"
-        subtitle="High-quality water management equipment for sustainable solutions"
+        subtitle="Professional water testing kits for accurate quality analysis"
         backgroundImage="https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5"
         size="medium"
       />
@@ -204,11 +192,11 @@ const Products = () => {
                 Our Product Line
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mt-4 mb-6">
-                Professional Water Resource Equipment
+                Professional Water Testing Equipment
               </h2>
               <p className="text-gray-600">
-                ENATECH supplies high-quality water management equipment designed for reliability, 
-                accuracy, and durability in diverse environmental conditions.
+                ENATECH supplies high-quality water testing kits designed for reliability, 
+                accuracy, and ease of use in diverse environmental conditions.
               </p>
             </div>
           </AnimatedElement>
@@ -285,11 +273,11 @@ const Products = () => {
           <AnimatedElement>
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mb-6">
-                Need Equipment for Your Project?
+                Need Testing Equipment for Your Project?
               </h2>
               <p className="text-gray-700 mb-8">
-                We supply high-quality water management equipment tailored to your specific requirements.
-                Contact us today to discuss your equipment needs and get expert recommendations.
+                We supply high-quality water testing kits tailored to your specific requirements.
+                Contact us today to discuss your needs and get expert recommendations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild className="bg-enatech-blue hover:bg-enatech-blue-dark group">
