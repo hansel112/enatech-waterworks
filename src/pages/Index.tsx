@@ -5,7 +5,7 @@ import ServiceCard from '@/components/ServiceCard';
 import ProductSlideCard from '@/components/ProductSlideCard';
 import ReviewCard from '@/components/ReviewCard';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Droplet, Sun, Leaf, Factory, HardHat, Briefcase } from 'lucide-react';
+import { ArrowRight, Droplet, Sun, Leaf } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import {
   Carousel,
@@ -37,77 +37,69 @@ const Index = () => {
     };
   }, []);
 
-  // Services data
+  // Services data - Updated with the three core services
   const services = [
     {
       icon: <Droplet size={28} />,
-      title: "Water Quality Testing",
-      description: "Comprehensive water quality analysis to ensure safe and clean water sources for various uses.",
+      title: "Smart Digital Water Quality Testing",
+      description: "We offer advanced, real-time water quality monitoring using smart digital tools and IoT-bluetooth enabled devices. Our testing systems provide instant and accurate analysis of key water parameters, ensuring early detection of contaminants and enabling proactive water management.",
       link: "/services#water-quality"
     },
     {
       icon: <Sun size={28} />,
-      title: "Solar Water Pumping",
-      description: "Sustainable water pumping solutions powered by solar energy for agriculture and community use.",
-      link: "/services#solar-pumping"
+      title: "Water Treatment Solutions",
+      description: "Our comprehensive water treatment services cater to domestic, commercial, and agricultural needs. We specialize in the design, installation and maintenance of Online Chemical Dosing Pumps for real time, automated water treatment across various applications.",
+      link: "/services#water-treatment"
     },
     {
       icon: <Leaf size={28} />,
-      title: "Agricultural Advisory",
-      description: "Expert agricultural consultancy services to optimize water usage and improve crop yields.",
+      title: "Agricultural Advisory Services",
+      description: "We empower farmers and agribusinesses with expert guidance on water-efficient irrigation, soil health, and crop management. By integrating water analytics with agronomic expertise, we help optimize yield, reduce water waste, and promote sustainable farming practices.",
       link: "/services#agricultural-advisory"
-    },
-    {
-      icon: <Factory size={28} />,
-      title: "Products & Equipment",
-      description: "High-quality water management equipment and products for all your water-related needs.",
-      link: "/products"
-    },
-    {
-      icon: <HardHat size={28} />,
-      title: "Engineering Services",
-      description: "Professional engineering solutions for water resources challenges and infrastructure development.",
-      link: "/services#engineering"
-    },
-    {
-      icon: <Briefcase size={28} />,
-      title: "Consulting Services",
-      description: "Strategic consulting for organizations looking to optimize their water management practices.",
-      link: "/services#consulting"
     }
   ];
 
-  // Product slider data
+  // Product slider data - Updated with the requested products
   const featuredProducts = [
     {
-      title: "Water Quality Testing Kit",
-      description: "Comprehensive testing kit for measuring pH, hardness, chlorine, and other critical water parameters.",
+      title: "5-Way Water Check Eco Packs (NCW-480115) (W4H)",
       imageSrc: "https://images.unsplash.com/photo-1518770660439-4636190af475",
       link: "/products#testing-kits"
     },
     {
-      title: "Solar Water Pump System",
-      description: "Energy-efficient solar-powered pumping solutions for agriculture and domestic water supply.",
+      title: "Free & Total Chlorine Eco Packs (NCW-480655-W4H)",
       imageSrc: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-      link: "/products#pumping-systems"
+      link: "/products#testing-kits"
     },
     {
-      title: "Irrigation Controllers",
-      description: "Smart irrigation controllers that optimize water usage based on weather conditions and soil moisture.",
+      title: "Free Chlorine Water Check (NCW-481026-W4H)",
       imageSrc: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      link: "/products#irrigation"
+      link: "/products#testing-kits"
     },
     {
-      title: "Water Treatment Systems",
-      description: "Advanced filtration and purification systems for clean, safe water in any environment.",
+      title: "ITS Complete Home Water Quality Test Kit (NCW-481199)",
       imageSrc: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
-      link: "/products#treatment-systems"
+      link: "/products#testing-kits"
     },
     {
-      title: "Water Flow Meters",
-      description: "Precise measurement instruments for monitoring water flow in agricultural and industrial applications.",
+      title: "Pool Check 3in1 Eco pack (NCW-484335)",
       imageSrc: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
-      link: "/products#measurement"
+      link: "/products#testing-kits"
+    },
+    {
+      title: "Safe Well Check Home Well Water Test Kit (NCW-487941)",
+      imageSrc: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
+      link: "/products#testing-kits"
+    },
+    {
+      title: "UV Light (NCW-487199)",
+      imageSrc: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+      link: "/products#equipment"
+    },
+    {
+      title: "ITS Water Quality Test Kit (NCW-487986)",
+      imageSrc: "https://images.unsplash.com/photo-1458668383970-8ddd3927deed",
+      link: "/products#testing-kits"
     }
   ];
 
@@ -186,12 +178,12 @@ const Index = () => {
     );
   };
   
-  // Stats data
+  // Stats data - Updated to reflect a startup
   const stats = [
-    { value: 15, label: "Years of Experience", suffix: "+" },
-    { value: 500, label: "Projects Completed", suffix: "+" },
-    { value: 100, label: "Satisfied Clients", suffix: "%" },
-    { value: 30, label: "Team Members", suffix: "+" },
+    { value: 6, label: "Years of Experience", suffix: "+" },
+    { value: 10, label: "Projects Completed", suffix: "+" },
+    { value: 100, label: "Customer Satisfaction", suffix: "%" },
+    { value: 5, label: "Team Members", suffix: "+" },
   ];
 
   return (
@@ -199,7 +191,7 @@ const Index = () => {
       {/* Hero Section */}
       <HeroSection 
         title="Innovative Water Resources Engineering"
-        subtitle="Sustainable solutions for water management, quality testing, and agricultural development"
+        subtitle="Smart solutions for water quality testing, treatment, and agricultural development"
         ctaText="Explore Our Services"
         ctaLink="/services"
         backgroundImage="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
@@ -216,10 +208,10 @@ const Index = () => {
                   About ENATECH
                 </span>
                 <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 leading-tight">
-                  Pioneering Water Resource <br className="hidden md:block" /> Solutions Since 2008
+                  Pioneering Smart Water <br className="hidden md:block" /> Solutions Since 2025
                 </h2>
                 <p className="text-gray-600">
-                  ENATECH is a leading water resources engineering company dedicated to providing innovative and sustainable solutions for water management challenges around the world. Our team of experts combines technical excellence with a deep commitment to environmental stewardship.
+                  ENATECH is an innovative water resources engineering company dedicated to providing smart and sustainable solutions for water management challenges. Our team of experts combines technical excellence with a deep commitment to environmental stewardship.
                 </p>
                 <div className="grid grid-cols-2 gap-4 pt-4">
                   <div className="flex items-start">
@@ -228,7 +220,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Quality Assured</h4>
-                      <p className="text-sm text-gray-600">ISO Certified processes</p>
+                      <p className="text-sm text-gray-600">Rigorous standards</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -255,7 +247,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Innovative</h4>
-                      <p className="text-sm text-gray-600">Cutting-edge solutions</p>
+                      <p className="text-sm text-gray-600">Smart digital solutions</p>
                     </div>
                   </div>
                 </div>
@@ -279,8 +271,8 @@ const Index = () => {
                 />
               </div>
               <div className="absolute bottom-6 right-6 bg-white p-4 rounded-lg shadow-lg">
-                <p className="text-2xl font-bold text-enatech-blue-dark">15+ Years</p>
-                <p className="text-gray-600">Of Excellence</p>
+                <p className="text-2xl font-bold text-enatech-blue-dark">Founded</p>
+                <p className="text-gray-600">March 2025</p>
               </div>
             </AnimatedElement>
           </div>
@@ -299,8 +291,8 @@ const Index = () => {
                 Comprehensive Water Solutions
               </h2>
               <p className="text-gray-600">
-                From water quality testing to solar pumping systems and agricultural advisory, 
-                we offer a wide range of services to meet your water resource needs.
+                From smart digital water quality testing to water treatment solutions and agricultural advisory, 
+                we offer specialized services to meet your water resource needs.
               </p>
             </div>
           </AnimatedElement>
@@ -340,10 +332,10 @@ const Index = () => {
                 Our Products
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mt-4 mb-6">
-                Cutting-Edge Equipment & Solutions
+                Water Quality Testing Equipment
               </h2>
               <p className="text-gray-600">
-                Explore our range of high-quality water management equipment and solutions designed to meet diverse needs across industries.
+                Explore our range of high-quality water testing kits and equipment designed to meet diverse needs across industries.
               </p>
             </div>
           </AnimatedElement>
@@ -364,7 +356,7 @@ const Index = () => {
                     <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                       <ProductSlideCard
                         title={product.title}
-                        description={product.description}
+                        description="" 
                         imageSrc={product.imageSrc}
                         link={product.link}
                       />

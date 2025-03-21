@@ -5,6 +5,12 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2 } from 'lucide-react';
+import emailjs from 'emailjs-com';
+
+// EmailJS configuration
+const EMAILJS_SERVICE_ID = 'service_wk90cii';
+const EMAILJS_TEMPLATE_ID = 'template_4xkmvjm';
+const EMAILJS_USER_ID = 'ZOBbxGlzINvmSFNTx';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -27,8 +33,25 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    // Prepare template parameters
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      from_phone: formData.phone,
+      company: formData.company,
+      message: formData.message,
+      service: formData.service
+    };
+    
+    // Send email using EmailJS
+    emailjs.send(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
+      templateParams,
+      EMAILJS_USER_ID
+    )
+    .then((response) => {
+      console.log('Email sent successfully:', response);
       setIsSubmitting(false);
       toast({
         title: "Message sent successfully",
@@ -44,7 +67,16 @@ const ContactForm = () => {
         message: '',
         service: 'General Inquiry'
       });
-    }, 1500);
+    })
+    .catch((error) => {
+      console.error('Email error:', error);
+      setIsSubmitting(false);
+      toast({
+        title: "Error sending message",
+        description: "Please try again or contact us directly via email.",
+        variant: "destructive"
+      });
+    });
   };
 
   return (
@@ -124,11 +156,10 @@ const ContactForm = () => {
           className="w-full rounded-md border border-gray-300 py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-enatech-blue focus:border-transparent"
         >
           <option value="General Inquiry">General Inquiry</option>
-          <option value="Water Quality Testing">Water Quality Testing</option>
-          <option value="Solar Water Pumping">Solar Water Pumping</option>
-          <option value="Agricultural Advisory">Agricultural Advisory</option>
-          <option value="Equipment Supply">Equipment Supply</option>
-          <option value="Engineering Consultation">Engineering Consultation</option>
+          <option value="Smart Digital Water Quality Testing">Smart Digital Water Quality Testing</option>
+          <option value="Water Treatment Solutions">Water Treatment Solutions</option>
+          <option value="Agricultural Advisory Services">Agricultural Advisory Services</option>
+          <option value="Product Inquiry">Product Inquiry</option>
         </select>
       </div>
       

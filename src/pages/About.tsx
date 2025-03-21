@@ -46,62 +46,23 @@ const About = () => {
     );
   };
 
-  // Timeline data
+  // Timeline data - Updated for startup
   const timeline = [
     {
-      year: "2008",
+      year: "2025",
       title: "Company Founded",
-      description: "ENATECH was established with a vision to provide sustainable water solutions."
-    },
-    {
-      year: "2012",
-      title: "Expansion of Services",
-      description: "Added solar water pumping and agricultural advisory to our service offerings."
-    },
-    {
-      year: "2015",
-      title: "International Projects",
-      description: "Began working on international water resource projects in developing regions."
-    },
-    {
-      year: "2018",
-      title: "Technical Innovation",
-      description: "Developed proprietary water quality testing methods and equipment."
-    },
-    {
-      year: "2021",
-      title: "Sustainability Award",
-      description: "Recognized for our contribution to sustainable water management solutions."
+      description: "ENATECH was registered on 19th March 2025 with a vision to provide smart, sustainable water solutions."
     }
   ];
 
-  // Team data
-  const team = [
-    {
-      name: "Dr. Alex Rivera",
-      role: "Founder & CEO",
-      bio: "Ph.D. in Water Resources Engineering with over 20 years of experience in the field.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&w=400"
-    },
-    {
-      name: "Sarah Johnson",
-      role: "Lead Environmental Engineer",
-      bio: "Specializes in water quality monitoring and treatment system design.",
-      image: "https://images.unsplash.com/photo-1526450078254-7aec4ae92220?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&w=400"
-    },
-    {
-      name: "Michael Patel",
-      role: "Agricultural Consultant",
-      bio: "Expert in irrigation systems and water conservation techniques for agriculture.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&w=400"
-    },
-    {
-      name: "Elena Rodriguez",
-      role: "Solar Systems Engineer",
-      bio: "Designs and implements solar-powered water pumping solutions worldwide.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&w=400"
-    }
-  ];
+  // Team data - Only the founder
+  const founder = {
+    name: "Eng. Nathan Etyang",
+    role: "Founder & Director",
+    bio: "Experienced and results-driven Water Resources Engineer with 6+ years of expertise in designing and managing sustainable water supply systems. Passionate about integrating emerging technologies, particularly AI, into water infrastructure to enhance sustainability and access to clean water. Published researcher in AI applications for water treatment, with a strong focus on innovation, WASH projects, and collaborative engineering solutions.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&w=400",
+    linkedin: "https://www.linkedin.com/in/nathan-etyang-976948173"
+  };
 
   return (
     <main className="min-h-screen pt-16">
@@ -134,20 +95,19 @@ const About = () => {
                   Our Story
                 </span>
                 <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 leading-tight">
-                  A Vision for Sustainable Water Management
+                  A Vision for Smart Water Management
                 </h2>
                 <p className="text-gray-600">
-                  Founded in 2008, ENATECH began with a mission to transform how communities and businesses 
-                  approach water resource management. Our founder, Dr. Alex Rivera, recognized the growing 
+                  Founded in March 2025, ENATECH began with a mission to transform how communities and businesses 
+                  approach water resource management. Our founder, Eng. Nathan Etyang, recognized the growing 
                   challenges of water scarcity and quality issues worldwide.
                 </p>
                 <p className="text-gray-600">
-                  Starting with just a small team of dedicated engineers, we've grown into a comprehensive 
-                  water resource engineering firm with expertise spanning water quality testing, solar-powered 
-                  pumping systems, agricultural water management, and more.
+                  As a startup with a clear vision, we've assembled a team of dedicated professionals committed to 
+                  delivering innovative water solutions that integrate cutting-edge technology with sustainable practices.
                 </p>
                 <p className="text-gray-600">
-                  Today, ENATECH is proud to serve clients across multiple sectors, from small rural communities 
+                  ENATECH is positioned to serve clients across multiple sectors, from small rural communities 
                   to large agricultural operations and government agencies. Our commitment to innovation, 
                   sustainability, and excellence remains at the heart of everything we do.
                 </p>
@@ -163,13 +123,13 @@ const About = () => {
           <AnimatedElement>
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-enatech-blue font-medium px-4 py-1.5 bg-enatech-blue-light rounded-full text-sm">
-                Mission & Values
+                Mission & Vision
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mt-4 mb-6">
                 What Drives Us Forward
               </h2>
               <p className="text-gray-600">
-                At ENATECH, our mission and values guide every decision we make and every project we undertake.
+                At ENATECH, our mission, vision, and values guide every decision we make and every project we undertake.
               </p>
             </div>
           </AnimatedElement>
@@ -179,9 +139,13 @@ const About = () => {
               <div className="bg-white p-8 rounded-xl shadow-sm h-full">
                 <h3 className="text-2xl font-serif font-semibold text-gray-800 mb-4">Our Mission</h3>
                 <p className="text-gray-600 mb-6">
-                  To provide innovative, sustainable, and accessible water resource solutions that improve lives, 
-                  protect the environment, and foster sustainable development. We strive to be a catalyst for positive 
-                  change in how water resources are managed globally.
+                  To deliver smart, sustainable water solutions that enhance water quality, optimize resource use, 
+                  and empower communities and industries through innovation, technology, and expert support.
+                </p>
+                <h3 className="text-2xl font-serif font-semibold text-gray-800 mb-4">Our Vision</h3>
+                <p className="text-gray-600 mb-6">
+                  To be a global leader in smart water management, transforming lives through clean water, 
+                  sustainable practices, and intelligent agricultural solutions for a healthier, more resilient future.
                 </p>
                 <div className="pt-4">
                   <Button asChild className="bg-enatech-blue hover:bg-enatech-blue-dark">
@@ -203,7 +167,7 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Innovation</h4>
-                      <p className="text-gray-600">Constantly seeking new and better ways to address water challenges.</p>
+                      <p className="text-gray-600">We harness technology and creativity to pioneer advanced water management and treatment solutions.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -212,7 +176,16 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Sustainability</h4>
-                      <p className="text-gray-600">Prioritizing environmental protection in all our solutions.</p>
+                      <p className="text-gray-600">We are committed to eco-conscious practices that preserve water resources for future generations.</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="rounded-full p-1 bg-enatech-green-light text-enatech-green-dark mr-3 mt-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-800">Integrity</h4>
+                      <p className="text-gray-600">We uphold the highest standards of honesty, accountability, and professionalism in all our engagements.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -221,7 +194,7 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Excellence</h4>
-                      <p className="text-gray-600">Maintaining the highest standards in all aspects of our work.</p>
+                      <p className="text-gray-600">We strive for precision, reliability, and quality in every service, product, and solution we offer.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -229,8 +202,26 @@ const About = () => {
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     </div>
                     <div>
-                      <h4 className="font-medium text-gray-800">Community</h4>
-                      <p className="text-gray-600">Building relationships and supporting the communities we serve.</p>
+                      <h4 className="font-medium text-gray-800">Collaboration</h4>
+                      <p className="text-gray-600">We value partnerships and co-create solutions with our clients, aligning with their unique goals and challenges.</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="rounded-full p-1 bg-enatech-green-light text-enatech-green-dark mr-3 mt-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-800">Empowerment</h4>
+                      <p className="text-gray-600">We enable informed decision-making through education, training, and expert advisory, fostering self-reliance and growth.</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="rounded-full p-1 bg-enatech-green-light text-enatech-green-dark mr-3 mt-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-800">Customer-Centricity</h4>
+                      <p className="text-gray-600">We prioritize our clients' needs, delivering tailored, impactful, and cost-effective solutions that drive value.</p>
                     </div>
                   </li>
                 </ul>
@@ -249,10 +240,10 @@ const About = () => {
                 Our Journey
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mt-4 mb-6">
-                ENATECH Through the Years
+                ENATECH: A New Beginning
               </h2>
               <p className="text-gray-600">
-                Explore our growth and major milestones since our founding.
+                Follow our journey as we grow and establish ourselves in the water resources sector.
               </p>
             </div>
           </AnimatedElement>
@@ -298,37 +289,45 @@ const About = () => {
           <AnimatedElement>
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-enatech-blue font-medium px-4 py-1.5 bg-enatech-blue-light rounded-full text-sm">
-                Our Team
+                Our Leadership
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mt-4 mb-6">
-                Meet the Experts Behind ENATECH
+                Meet Our Founder
               </h2>
               <p className="text-gray-600">
-                Our team combines decades of experience in water resources engineering with a passion 
-                for sustainable solutions.
+                The vision and expertise behind ENATECH.
               </p>
             </div>
           </AnimatedElement>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <AnimatedElement key={index} delay={100 + (index * 100)}>
-                <div className="bg-white rounded-xl overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-2">
-                  <div className="h-64 overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name} 
-                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-serif font-semibold text-gray-800">{member.name}</h3>
-                    <p className="text-enatech-blue font-medium text-sm mb-3">{member.role}</p>
-                    <p className="text-gray-600 text-sm">{member.bio}</p>
-                  </div>
+          <div className="max-w-3xl mx-auto">
+            <AnimatedElement delay={100}>
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-2">
+                <div className="h-64 overflow-hidden">
+                  <img 
+                    src={founder.image} 
+                    alt={founder.name} 
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
                 </div>
-              </AnimatedElement>
-            ))}
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-serif font-semibold text-gray-800">{founder.name}</h3>
+                    <a 
+                      href={founder.linkedin} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-enatech-blue hover:text-enatech-blue-dark"
+                      aria-label="LinkedIn Profile"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                  </div>
+                  <p className="text-enatech-blue font-medium text-sm mb-3">{founder.role}</p>
+                  <p className="text-gray-600">{founder.bio}</p>
+                </div>
+              </div>
+            </AnimatedElement>
           </div>
         </div>
       </section>
@@ -345,7 +344,7 @@ const About = () => {
                 Passionate About Water Resources?
               </h2>
               <p className="text-gray-600 mb-8">
-                We're always looking for talented individuals to join our team. If you're passionate about 
+                We're looking for talented individuals to join our team. If you're passionate about 
                 water conservation, engineering, or sustainable development, we'd love to hear from you.
               </p>
               <Button asChild className="bg-enatech-blue hover:bg-enatech-blue-dark">
