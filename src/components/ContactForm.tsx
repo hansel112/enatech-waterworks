@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -8,9 +7,14 @@ import { Loader2 } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
 // EmailJS configuration
+// Note: You need to create a free EmailJS account and set up a service pointing to enatechcoltd@gmail.com
+// Then update these IDs with your actual EmailJS service, template, and user IDs
 const EMAILJS_SERVICE_ID = 'service_wk90cii';
 const EMAILJS_TEMPLATE_ID = 'template_4xkmvjm';
-const EMAILJS_USER_ID = 'ZOBbxGlzINvmSFNTx';
+const EMAILJS_PUBLIC_KEY = 'ZOBbxGlzINvmSFNTx'; // This should be your public key, not user ID
+
+// Initialize EmailJS with your public key
+emailjs.init(EMAILJS_PUBLIC_KEY);
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -40,15 +44,16 @@ const ContactForm = () => {
       from_phone: formData.phone,
       company: formData.company,
       message: formData.message,
-      service: formData.service
+      service: formData.service,
+      to_email: 'enatechcoltd@gmail.com' // Ensure recipient email is included
     };
     
-    // Send email using EmailJS
+    // Send email using EmailJS with the updated method signature
     emailjs.send(
       EMAILJS_SERVICE_ID,
       EMAILJS_TEMPLATE_ID,
       templateParams,
-      EMAILJS_USER_ID
+      EMAILJS_PUBLIC_KEY // Use public key here instead of user ID
     )
     .then((response) => {
       console.log('Email sent successfully:', response);
@@ -73,7 +78,7 @@ const ContactForm = () => {
       setIsSubmitting(false);
       toast({
         title: "Error sending message",
-        description: "Please try again or contact us directly via email.",
+        description: "Please try again or contact us directly via email at enatechcoltd@gmail.com",
         variant: "destructive"
       });
     });
