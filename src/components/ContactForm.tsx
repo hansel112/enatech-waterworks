@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -7,10 +8,9 @@ import { Loader2 } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
 // EmailJS configuration
-// Note: You need to create a free EmailJS account and set up a service pointing to enatechcoltd@gmail.com
 const EMAILJS_SERVICE_ID = 'service_tbfvjlq';
-const EMAILJS_TEMPLATE_ID = 'template_csvghkb'; // Using the Contact Us Template ID
-const EMAILJS_PUBLIC_KEY = 'STBpc4qHTdux_kOh8'; // Your public key
+const EMAILJS_TEMPLATE_ID = 'template_csvghkb';
+const EMAILJS_PUBLIC_KEY = 'STBpc4qHTdux_kOh8';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -33,7 +33,10 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Prepare template parameters
+    // Initialize EmailJS with the public key first
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+    
+    // Prepare template parameters - ensure all fields from the form are included
     const templateParams = {
       from_name: formData.name,
       from_email: formData.email,
@@ -41,16 +44,20 @@ const ContactForm = () => {
       company: formData.company,
       message: formData.message,
       service: formData.service,
-      to_email: 'enatechcoltd@gmail.com' // Ensure recipient email is included
+      // Make sure the following parameters match your EmailJS template variables
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      subject: `New Contact Form Submission - ${formData.service}`,
+      to_name: 'ENATECH Team',
+      to_email: 'enatechcoltd@gmail.com'
     };
     
-    // Send email using EmailJS - using the correct method signature
-    // Important: Make sure your EmailJS account is activated and the service/template is set up correctly
+    // Send email using EmailJS
     emailjs.send(
       EMAILJS_SERVICE_ID,
       EMAILJS_TEMPLATE_ID,
-      templateParams,
-      EMAILJS_PUBLIC_KEY
+      templateParams
     )
     .then((response) => {
       console.log('Email sent successfully:', response);

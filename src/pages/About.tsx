@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import { Button } from '@/components/ui/button';
@@ -60,7 +59,7 @@ const About = () => {
     name: "Eng. Nathan Etyang",
     role: "Founder & Director",
     bio: "Experienced and results-driven Water Resources Engineer with 6+ years of expertise in designing and managing sustainable water supply systems. Passionate about integrating emerging technologies, particularly AI, into water infrastructure to enhance sustainability and access to clean water. Published researcher in AI applications for water treatment, with a strong focus on innovation, WASH projects, and collaborative engineering solutions.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&w=400",
+    image: "/lovable-uploads/9335445d-b4df-4a18-82ad-e66577b0c88f.png",
     linkedin: "https://www.linkedin.com/in/nathan-etyang-976948173"
   };
 
