@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
@@ -107,7 +106,7 @@ const Products = () => {
       id: "home-testing",
       title: "Home Water Testing Solutions",
       description: "Complete testing solutions for residential water quality monitoring.",
-      image: "/lovable-uploads/ce244286-5e43-4208-89f0-b8d80a9a1501.png",
+      image: "/lovable-uploads/b30139cf-c039-4308-927e-ecfd1744fb86.png",
       products: [
         {
           name: "ITS Complete Home Water Quality Test Kit (NCW-481199)",
