@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
@@ -59,47 +58,47 @@ const Index = () => {
     }
   ];
 
-  // Product slider data - Updated with the requested products
+  // Product slider data - Updated with the requested products and their images
   const featuredProducts = [
     {
       title: "5-Way Water Check Eco Packs (NCW-480115) (W4H)",
-      imageSrc: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      imageSrc: "/lovable-uploads/c66c7de0-b113-4ae5-a617-48b41b7a8bac.png",
       link: "/products#testing-kits"
     },
     {
       title: "Free & Total Chlorine Eco Packs (NCW-480655-W4H)",
-      imageSrc: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      imageSrc: "/lovable-uploads/bf338c63-ac3c-4d29-96bc-40037f49f9f0.png",
       link: "/products#testing-kits"
     },
     {
       title: "Free Chlorine Water Check (NCW-481026-W4H)",
-      imageSrc: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      imageSrc: "/lovable-uploads/63b79d61-5e4d-4913-ab40-033862133b30.png",
       link: "/products#testing-kits"
     },
     {
       title: "ITS Complete Home Water Quality Test Kit (NCW-481199)",
-      imageSrc: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
-      link: "/products#testing-kits"
+      imageSrc: "/lovable-uploads/19815630-d5e6-421e-af0f-341911b75fd3.png",
+      link: "/products#home-testing"
     },
     {
       title: "Pool Check 3in1 Eco pack (NCW-484335)",
-      imageSrc: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
-      link: "/products#testing-kits"
+      imageSrc: "/lovable-uploads/8b5ceb47-9caa-4074-9c1f-cdaaa4679723.png",
+      link: "/products#specialized-testing"
     },
     {
       title: "Safe Well Check Home Well Water Test Kit (NCW-487941)",
-      imageSrc: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      link: "/products#testing-kits"
+      imageSrc: "/lovable-uploads/3d309d15-0a83-4407-8e7f-a1b87bdd992a.png",
+      link: "/products#home-testing"
     },
     {
       title: "UV Light (NCW-487199)",
-      imageSrc: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-      link: "/products#equipment"
+      imageSrc: "/lovable-uploads/de2c6f0c-ab2e-46a4-b25a-e5f6b100fb78.png",
+      link: "/products#specialized-testing"
     },
     {
       title: "ITS Water Quality Test Kit (NCW-487986)",
-      imageSrc: "https://images.unsplash.com/photo-1458668383970-8ddd3927deed",
-      link: "/products#testing-kits"
+      imageSrc: "/lovable-uploads/fa5c545e-3ebf-4c7d-84e5-c531e8647f3f.png",
+      link: "/products#home-testing"
     }
   ];
 

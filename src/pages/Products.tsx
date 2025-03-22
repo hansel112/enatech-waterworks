@@ -57,7 +57,7 @@ const Products = () => {
     );
   };
 
-  // Updated product categories and items based on specified products
+  // Updated product categories and items with specific product images
   const productCategories = [
     {
       id: "testing-kits",
@@ -74,7 +74,8 @@ const Products = () => {
             "Eco-friendly packaging",
             "Ideal for home and light commercial use"
           ],
-          icon: <Droplet size={24} />
+          icon: <Droplet size={24} />,
+          image: "/lovable-uploads/c66c7de0-b113-4ae5-a617-48b41b7a8bac.png"
         },
         {
           name: "Free & Total Chlorine Eco Packs (NCW-480655-W4H)",
@@ -85,7 +86,8 @@ const Products = () => {
             "Complete with all testing supplies",
             "Simple color-matching system"
           ],
-          icon: <BeakerIcon size={24} />
+          icon: <BeakerIcon size={24} />,
+          image: "/lovable-uploads/bf338c63-ac3c-4d29-96bc-40037f49f9f0.png"
         },
         {
           name: "Free Chlorine Water Check (NCW-481026-W4H)",
@@ -96,7 +98,8 @@ const Products = () => {
             "Easy-to-read color chart",
             "Multiple tests per package"
           ],
-          icon: <Filter size={24} />
+          icon: <Filter size={24} />,
+          image: "/lovable-uploads/63b79d61-5e4d-4913-ab40-033862133b30.png"
         }
       ]
     },
@@ -115,7 +118,8 @@ const Products = () => {
             "Lab-grade accuracy for home use",
             "Includes water quality guide"
           ],
-          icon: <BeakerIcon size={24} />
+          icon: <BeakerIcon size={24} />,
+          image: "/lovable-uploads/19815630-d5e6-421e-af0f-341911b75fd3.png"
         },
         {
           name: "Safe Well Check Home Well Water Test Kit (NCW-487941)",
@@ -126,7 +130,8 @@ const Products = () => {
             "Simple testing procedure",
             "Detailed results interpretation guide"
           ],
-          icon: <Droplet size={24} />
+          icon: <Droplet size={24} />,
+          image: "/lovable-uploads/3d309d15-0a83-4407-8e7f-a1b87bdd992a.png"
         },
         {
           name: "ITS Water Quality Test Kit (NCW-487986)",
@@ -137,7 +142,8 @@ const Products = () => {
             "Reusable components where possible",
             "Digital result recording options"
           ],
-          icon: <Filter size={24} />
+          icon: <Filter size={24} />,
+          image: "/lovable-uploads/fa5c545e-3ebf-4c7d-84e5-c531e8647f3f.png"
         }
       ]
     },
@@ -156,7 +162,8 @@ const Products = () => {
             "Perfect for pool maintenance",
             "Clear color-coded results"
           ],
-          icon: <BeakerIcon size={24} />
+          icon: <BeakerIcon size={24} />,
+          image: "/lovable-uploads/8b5ceb47-9caa-4074-9c1f-cdaaa4679723.png"
         },
         {
           name: "UV Light (NCW-487199)",
@@ -167,7 +174,8 @@ const Products = () => {
             "Detects fluorescent markers",
             "Durable construction"
           ],
-          icon: <Sun size={24} />
+          icon: <Sun size={24} />,
+          image: "/lovable-uploads/de2c6f0c-ab2e-46a4-b25a-e5f6b100fb78.png"
         }
       ]
     }
@@ -220,11 +228,15 @@ const Products = () => {
                       <div className="space-y-8 pt-4">
                         {category.products.map((product, i) => (
                           <div key={i} className="bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                            <div className="flex items-start gap-4">
-                              <div className="bg-enatech-blue-light rounded-lg p-2 text-enatech-blue-dark">
-                                {product.icon}
+                            <div className="flex flex-col md:flex-row items-start gap-4">
+                              <div className="bg-white rounded-lg p-4 text-enatech-blue-dark border border-gray-200 shadow-sm w-full md:w-1/3 flex justify-center items-center">
+                                <img 
+                                  src={product.image} 
+                                  alt={product.name}
+                                  className="object-contain max-h-48"
+                                />
                               </div>
-                              <div>
+                              <div className="w-full md:w-2/3">
                                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h3>
                                 <p className="text-gray-600 mb-4">{product.description}</p>
                                 

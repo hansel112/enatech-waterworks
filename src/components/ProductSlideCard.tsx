@@ -8,7 +8,7 @@ import { Card } from '@/components/ui/card';
 
 interface ProductSlideCardProps {
   title: string;
-  description: string; // Keeping this in the interface for compatibility
+  description?: string; // Making this optional since we don't use it
   imageSrc: string;
   link: string;
   className?: string;
@@ -16,18 +16,18 @@ interface ProductSlideCardProps {
 
 const ProductSlideCard: React.FC<ProductSlideCardProps> = ({
   title,
-  description, // Keeping this in the parameters for compatibility
+  description,
   imageSrc,
   link,
   className,
 }) => {
   return (
     <Card className={cn("h-full overflow-hidden", className)}>
-      <div className="relative h-64 md:h-72 overflow-hidden">
+      <div className="relative h-64 md:h-72 overflow-hidden bg-white flex items-center justify-center p-4">
         <img 
           src={imageSrc} 
           alt={title} 
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          className="max-h-full max-w-full object-contain"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4">
           <h3 className="text-xl font-serif font-semibold text-white mb-3">{title}</h3>
