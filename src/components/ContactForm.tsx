@@ -12,9 +12,6 @@ const EMAILJS_SERVICE_ID = 'service_tbfvjlq';
 const EMAILJS_TEMPLATE_ID = 'template_csvghkb'; // Using the Contact Us Template ID
 const EMAILJS_PUBLIC_KEY = 'STBpc4qHTdux_kOh8'; // Your public key
 
-// Initialize EmailJS with your public key
-emailjs.init(EMAILJS_PUBLIC_KEY);
-
 const ContactForm = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -47,11 +44,13 @@ const ContactForm = () => {
       to_email: 'enatechcoltd@gmail.com' // Ensure recipient email is included
     };
     
-    // Send email using EmailJS
+    // Send email using EmailJS - using the correct method signature
+    // Important: Make sure your EmailJS account is activated and the service/template is set up correctly
     emailjs.send(
       EMAILJS_SERVICE_ID,
       EMAILJS_TEMPLATE_ID,
-      templateParams
+      templateParams,
+      EMAILJS_PUBLIC_KEY
     )
     .then((response) => {
       console.log('Email sent successfully:', response);

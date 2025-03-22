@@ -11,9 +11,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="inline-block">
-              <span className="font-serif font-bold text-2xl text-enatech-blue-dark">
-                ENA<span className="text-enatech-green-dark">TECH</span>
-              </span>
+              <img 
+                src="/lovable-uploads/d7cb8c4e-c64c-471b-a742-d89f5ec33438.png" 
+                alt="ENATECH Logo" 
+                className="h-20 w-auto" 
+              />
             </Link>
             <p className="text-gray-600 mt-4 max-w-xs">
               Pioneering water resources engineering solutions for sustainable development and environmental stewardship.

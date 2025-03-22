@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -68,9 +69,9 @@ const Navbar = () => {
           aria-label="ENATECH - Home"
         >
           <img 
-            src="/lovable-uploads/fab80403-90d5-4fe5-a3ab-d4b4abcc30be.png" 
+            src="/lovable-uploads/d7cb8c4e-c64c-471b-a742-d89f5ec33438.png" 
             alt="ENATECH Logo" 
-            className="h-32 w-auto" 
+            className="h-16 w-auto" 
           />
         </Link>
 
