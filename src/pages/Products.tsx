@@ -63,7 +63,7 @@ const Products = () => {
       id: "testing-kits",
       title: "Water Testing Kits",
       description: "Professional water testing kits for accurate water quality analysis in various settings.",
-      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d",
+      image: "/lovable-uploads/66b87e9c-21c7-4073-92a8-589f8554ee52.png",
       products: [
         {
           name: "5-Way Water Check Eco Packs (NCW-480115) (W4H)",
@@ -107,7 +107,7 @@ const Products = () => {
       id: "home-testing",
       title: "Home Water Testing Solutions",
       description: "Complete testing solutions for residential water quality monitoring.",
-      image: "https://images.unsplash.com/photo-1527689638836-411945a2b57c",
+      image: "/lovable-uploads/ce244286-5e43-4208-89f0-b8d80a9a1501.png",
       products: [
         {
           name: "ITS Complete Home Water Quality Test Kit (NCW-481199)",
@@ -151,7 +151,7 @@ const Products = () => {
       id: "specialized-testing",
       title: "Specialized Testing Equipment",
       description: "Specialized equipment for specific water testing applications.",
-      image: "https://images.unsplash.com/photo-1604213410393-89f7e38d77c3",
+      image: "/lovable-uploads/59bb6d42-163d-45b3-9753-413ddf75a599.png",
       products: [
         {
           name: "Pool Check 3in1 Eco pack (NCW-484335)",
