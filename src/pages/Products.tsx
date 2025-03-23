@@ -106,7 +106,7 @@ const Products = () => {
       id: "home-testing",
       title: "Home Water Testing Solutions",
       description: "Complete testing solutions for residential water quality monitoring.",
-      image: "/lovable-uploads/b30139cf-c039-4308-927e-ecfd1744fb86.png",
+      image: "/lovable-uploads/ef956ade-0e64-430e-b58c-726187e21d80.png",
       products: [
         {
           name: "ITS Complete Home Water Quality Test Kit (NCW-481199)",
@@ -312,4 +312,3 @@ const Products = () => {
 };
 
 export default Products;
-
