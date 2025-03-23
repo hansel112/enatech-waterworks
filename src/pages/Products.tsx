@@ -261,7 +261,7 @@ const Products = () => {
                       <img 
                         src={category.image}
                         alt={category.title}
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                       />
                     </div>
                   </AnimatedElement>
@@ -312,3 +312,4 @@ const Products = () => {
 };
 
 export default Products;
+

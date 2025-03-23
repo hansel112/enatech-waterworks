@@ -47,7 +47,7 @@ const Services = () => {
     );
   };
   
-  // Updated services data with only the 3 specified services
+  // Updated services data with the new images
   const services = [
     {
       id: "water-quality",
@@ -60,7 +60,7 @@ const Services = () => {
         "Customizable alerts and reporting",
         "Compliance with local and international water quality standards"
       ],
-      image: "https://images.unsplash.com/photo-1504893524553-b855bce32c67"
+      image: "/lovable-uploads/1332f562-684c-4e33-98c5-b4c7a4e94c4b.png"
     },
     {
       id: "water-treatment",
@@ -73,7 +73,7 @@ const Services = () => {
         "Maintenance and Technical Support",
         "Cost-Effective and Sustainable Treatment Solutions"
       ],
-      image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
+      image: "/lovable-uploads/221e9272-34df-42d6-b455-daf40f4e31a0.png"
     },
     {
       id: "agricultural-advisory",
@@ -87,7 +87,7 @@ const Services = () => {
         "Sustainable Water Use Strategies",
         "Training and Capacity Building for Farmers"
       ],
-      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843"
+      image: "/lovable-uploads/b2d71bcc-e856-4def-acf8-1fd22dc69df2.png"
     }
   ];
 

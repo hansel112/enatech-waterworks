@@ -57,24 +57,22 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Services */}
+          {/* Services - Updated to display only the 3 services from Services page */}
           <div>
             <h3 className="font-serif text-lg font-medium mb-4 text-gray-800">Services</h3>
             <ul className="space-y-2">
               {[
-                'Water Quality Testing',
-                'Solar Water Pumping',
-                'Agricultural Advisory',
-                'Equipment Supply',
-                'Engineering Consultation',
+                { name: 'Water Quality Testing', hash: '#water-quality' },
+                { name: 'Water Treatment Solutions', hash: '#water-treatment' },
+                { name: 'Agricultural Advisory', hash: '#agricultural-advisory' },
               ].map((service, index) => (
                 <li key={index}>
                   <Link 
-                    to="/services" 
+                    to={`/services${service.hash}`} 
                     className="text-gray-600 hover:text-enatech-blue-dark flex items-center group"
                   >
                     <ChevronRight size={16} className="mr-2 transition-transform group-hover:translate-x-1" />
-                    <span>{service}</span>
+                    <span>{service.name}</span>
                   </Link>
                 </li>
               ))}
