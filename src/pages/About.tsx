@@ -341,7 +341,7 @@ const About = () => {
                 Join Our Team
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mt-4 mb-6">
-                Passionate About Water Resources?
+                Passionate About Water Quality solutions?
               </h2>
               <p className="text-gray-600 mb-8">
                 We're looking for talented individuals to join our team. If you're passionate about 
