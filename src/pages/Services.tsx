@@ -73,7 +73,7 @@ const Services = () => {
         "Maintenance and Technical Support",
         "Cost-Effective and Sustainable Treatment Solutions"
       ],
-      image: "/lovable-uploads/221e9272-34df-42d6-b455-daf40f4e31a0.png"
+      image: "/lovable-uploads/f2ec8468-b8fe-4251-a187-444c312153c9.png"
     },
     {
       id: "agricultural-advisory",

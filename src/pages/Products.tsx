@@ -186,7 +186,7 @@ const Products = () => {
       <HeroSection 
         title="Products & Equipment"
         subtitle="Professional water testing kits for accurate quality analysis"
-        backgroundImage="https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5"
+        backgroundImage="/lovable-uploads/8e706d3b-4651-4d7b-8a73-4850846ccf97.png"
         size="medium"
       />
       
