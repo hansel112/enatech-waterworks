@@ -68,7 +68,7 @@ const About = () => {
       {/* Hero Section */}
       <HeroSection 
         title="About ENATECH"
-        subtitle="Pioneering sustainable water solutions through innovation and expertise"
+        subtitle="Pioneering sustainable water quality solutions through innovation and expertise"
         backgroundImage="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
         overlayOpacity="medium"
         size="medium"
@@ -102,13 +102,14 @@ const About = () => {
                   challenges of water scarcity and quality issues worldwide.
                 </p>
                 <p className="text-gray-600">
-                  As a startup with a clear vision, we've assembled a team of dedicated professionals committed to 
-                  delivering innovative water solutions that integrate cutting-edge technology with sustainable practices.
+                  ENATECH's expertise covers, Smart irrigation planning, Solar Water Pumping Systems, Sustainable 
+                  Water Use Strategies, Training and Capacity Building for Farmers.
                 </p>
                 <p className="text-gray-600">
-                  ENATECH is positioned to serve clients across multiple sectors, from small rural communities 
-                  to large agricultural operations and government agencies. Our commitment to innovation, 
-                  sustainability, and excellence remains at the heart of everything we do.
+                  ENATECH has an expert team of certified professionals with years of experience in water science 
+                  and Agriculture, reliable State-of-the-art testing equipment and treatment systems, client 
+                  focused and customized solutions to fit your specific needs and budget, sustainable Practices 
+                  that promote eco-friendly and resource-efficient water use.
                 </p>
               </div>
             </AnimatedElement>
