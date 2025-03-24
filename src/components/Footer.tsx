@@ -18,7 +18,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-gray-600 mt-4 max-w-xs">
-              Pioneering water resources engineering solutions for sustainable development and environmental stewardship.
+              Pioneering innovative water engineering solutions for sustainable development and environmental stewardship.
             </p>
             <div className="pt-2 flex space-x-4">
               {/* Social Media Icons (placeholders) */}
