@@ -157,7 +157,7 @@ const Index = () => {
     <main className="min-h-screen">
       {/* Hero Section */}
       <HeroSection 
-        title="Innovative Water Resources Engineering"
+        title="Innovative Water Engineering Solutions"
         subtitle="Smart solutions for water quality testing, treatment, and agricultural development"
         ctaText="Explore Our Services"
         ctaLink="/services"
@@ -178,7 +178,7 @@ const Index = () => {
                   Pioneering Smart Water <br className="hidden md:block" /> Solutions Since 2025
                 </h2>
                 <p className="text-gray-600">
-                  ENATECH is an innovative water resources engineering company dedicated to providing smart and sustainable solutions for water management challenges. Our team of experts combines technical excellence with a deep commitment to environmental stewardship.
+                  ENATECH is a forward-thinking water solutions provider, dedicated to transforming how individuals, communities, and industries manage and utilize water. Our mission is to ensure clean, safe, and sustainable water through cutting-edge technology, innovative water quality testing and water treatment solutions, and expert agricultural advisory services.
                 </p>
                 <div className="grid grid-cols-2 gap-4 pt-4">
                   <div className="flex items-start">
@@ -391,7 +391,7 @@ const Index = () => {
                 Get Started Today
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 mt-4 mb-6">
-                Ready to Transform Your Water Resources?
+                Ready to Transform Your Water Quality Needs?
               </h2>
               <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
                 Whether you need water quality testing, solar pumping solutions, or expert agricultural advice,
