@@ -212,7 +212,7 @@ const Contact = () => {
               {[
                 {
                   question: "What areas do you service?",
-                  answer: "We provide our water resources engineering services nationwide, with a particular focus on the Western and Central regions. For international projects, please contact us directly to discuss your specific needs."
+                  answer: "We provide our water engineering services nationwide, with a particular focus on the Western and Central regions. For international projects, please contact us directly to discuss your specific needs."
                 },
                 {
                   question: "How can I get a quotation for your services?",
