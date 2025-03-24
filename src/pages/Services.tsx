@@ -208,7 +208,7 @@ const Services = () => {
                 Ready to Get Started?
               </h2>
               <p className="text-gray-700 mb-8">
-                Contact us today to discuss your water resource needs and discover how ENATECH can provide 
+                Contact us today to discuss your water quality needs and discover how ENATECH can provide 
                 the perfect solution for your project.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
