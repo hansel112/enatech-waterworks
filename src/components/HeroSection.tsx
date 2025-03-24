@@ -21,7 +21,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   subtitle,
   ctaText = 'Learn More',
   ctaLink = '/services',
-  backgroundImage = 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21',
+  backgroundImage = '/lovable-uploads/0d638468-df44-4682-a9e2-6f60c269d4e7.png', // Updated default image
   alignment = 'center',
   overlayOpacity = 'medium',
   size = 'medium',

@@ -69,7 +69,7 @@ const About = () => {
       <HeroSection 
         title="About ENATECH"
         subtitle="Pioneering sustainable water quality solutions through innovation and expertise"
-        backgroundImage="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+        backgroundImage="/lovable-uploads/fc15edfe-9f31-4fbc-864c-6a9a5d07301b.png"
         overlayOpacity="medium"
         size="medium"
       />
@@ -81,7 +81,7 @@ const About = () => {
             <AnimatedElement delay={100}>
               <div className="relative rounded-xl overflow-hidden h-[400px] md:h-[500px] shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed" 
+                  src="/lovable-uploads/cfc6fdd5-bc96-4202-8ced-5767e7d17c7b.png" 
                   alt="ENATECH company history" 
                   className="w-full h-full object-cover"
                 />

@@ -161,7 +161,7 @@ const Index = () => {
         subtitle="Smart solutions for water quality testing, treatment, and agricultural development"
         ctaText="Explore Our Services"
         ctaLink="/services"
-        backgroundImage="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
+        backgroundImage="/lovable-uploads/0d638468-df44-4682-a9e2-6f60c269d4e7.png"
         size="large"
       />
       
@@ -232,7 +232,7 @@ const Index = () => {
             <AnimatedElement delay={300} className="relative">
               <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb" 
+                  src="/lovable-uploads/47afe960-726e-437e-9fba-384b21aee2dd.png" 
                   alt="Water resources engineering" 
                   className="w-full h-full object-cover"
                 />

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import ContactForm from '@/components/ContactForm';
@@ -77,7 +76,7 @@ const Contact = () => {
       <HeroSection 
         title="Contact Us"
         subtitle="Get in touch with our team for consultations, quotes, or inquiries"
-        backgroundImage="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb"
+        backgroundImage="/lovable-uploads/9dc34a8c-0d61-4182-ad37-e226e6822728.png"
         size="small"
         alignment="left"
       />
@@ -191,7 +190,7 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* FAQ Section */}
+      {/* FAQ Section - Modified to only include first and last FAQs */}
       <section className="py-20 bg-white">
         <div className="container-custom">
           <AnimatedElement>
@@ -214,18 +213,6 @@ const Contact = () => {
                 {
                   question: "What areas do you service?",
                   answer: "We provide our water resources engineering services nationwide, with a particular focus on the Western and Central regions. For international projects, please contact us directly to discuss your specific needs."
-                },
-                {
-                  question: "How long does a typical water quality testing process take?",
-                  answer: "Basic water quality tests can be completed within 24-48 hours. More comprehensive analysis, including detailed biological testing, may take 3-5 business days. Emergency testing services are available upon request."
-                },
-                {
-                  question: "Do you offer maintenance services for solar water pumping systems?",
-                  answer: "Yes, we provide comprehensive maintenance packages for all solar water pumping systems, including those not initially installed by our team. Our maintenance services include regular inspections, cleaning, performance optimization, and repairs."
-                },
-                {
-                  question: "What types of agricultural operations do you typically work with?",
-                  answer: "We work with agricultural operations of all sizes, from small family farms to large commercial operations. Our clients include crop farmers, orchards, greenhouse operations, vineyards, and livestock producers."
                 },
                 {
                   question: "How can I get a quotation for your services?",
