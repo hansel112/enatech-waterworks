@@ -228,7 +228,7 @@ const Contact = () => {
                   answer: "We work with agricultural operations of all sizes, from small family farms to large commercial operations. Our clients include crop farmers, orchards, greenhouse operations, vineyards, and livestock producers."
                 },
                 {
-                  question: "How can I get a quote for your services?",
+                  question: "How can I get a quotation for your services?",
                   answer: "You can request a quote by filling out our contact form, calling our office, or sending us an email. For most services, we'll need some basic information about your project to provide an accurate estimate."
                 }
               ].map((faq, index) => (
