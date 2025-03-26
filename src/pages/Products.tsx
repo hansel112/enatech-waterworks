@@ -57,14 +57,14 @@ const Products = () => {
       id: "smart-digital-testing-kits",
       title: "Smart Digital Water Testing Kits",
       description: "Advanced digital testing equipment with smartphone connectivity for professional water analysis.",
-      image: "/lovable-uploads/d93b3e4a-8ca5-48d6-b03c-1b6dadc9b818.png",
+      // image: "/lovable-uploads/d93b3e4a-8ca5-48d6-b03c-1b6dadc9b818.png",
       products: [
         {
           name: "Multi Meter Kit (NCW-486301-W4H)",
           shortDescription: "The new eXact pH+ Smart Meter System with Bluetooth® SMART is perfect for the detection of pH, Conductivity, Salinity, TDS, Temperature, and ORP.",
-          price: "$397.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "eXact®",
-          partNumber: "NCW-486301",
+          // price: "$397.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "eXact®",
+          // partNumber: "NCW-486301",
           details: [
             "ITS has developed an all new handheld multi-parameter pocket meter that works in conjunction with the eXact iDip® app for iOS and Android smart devices. The combination of this with the iDip® Photometer and the eXact iDip® app now allows for automatic calculations of formulas such as the Langelier Saturation Index."
           ],
@@ -92,9 +92,9 @@ const Products = () => {
         {
           name: "Bluetooth Photometer (NCW-486700-BT-W4H)",
           shortDescription: "The eXact® Micro 20 with Bluetooth® SMART is a powerful dual-wavelength photometer system that connects wirelessly to your smart device.",
-          price: "$689.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "eXact®",
-          partNumber: "NCW-486700-BT",
+          // price: "$689.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "eXact®",
+          // partNumber: "NCW-486700-BT",
           details: [
             "The dual narrow band wavelength filters ensure delivery of the most accurate results! Pre-programmed to test over 40 water quality parameters with lab-quality accuracy.",
             "Fast, accurate results with EZ-3 Method Test results can be shared in real-time via email or exported to a CSV spreadsheet with time/date GPS locations when used with the eXact iDip® app 30-day satisfaction guarantee 2-year warranty."
@@ -126,9 +126,9 @@ const Products = () => {
         {
           name: "Bluetooth Well Drillers Kit (NCW-486700-BT-WD)",
           shortDescription: "The eXact® Micro 20 with Bluetooth® SMART is a powerful dual-wavelength photometer system designed specifically for well water testing.",
-          price: "$887.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "eXact®",
-          partNumber: "NCW-486700-BT-WD",
+          // price: "$887.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "eXact®",
+          // partNumber: "NCW-486700-BT-WD",
           details: [
             "The dual narrow band wavelength filters ensure delivery of the most accurate results! Pre-programmed to test over 40 water quality parameters with lab-quality accuracy Fast, accurate results with EZ-3 Method Test results can be shared in real time via email or exported to a CSV spreadsheet with time & date GPS locations when used with the eXact iDip® app 30-day satisfaction guarantee 2-year warranty."
           ],
@@ -145,9 +145,9 @@ const Products = () => {
         {
           name: "Bluetooth Pool Kit (NCW-486700-BT-KP)",
           shortDescription: "The eXact® Micro 20 with Bluetooth® SMART photometer system specially configured for pool and spa water testing.",
-          price: "$888.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "eXact®",
-          partNumber: "NCW-486700-BT-KP",
+          // price: "$888.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "eXact®",
+          // partNumber: "NCW-486700-BT-KP",
           details: [
             "The dual narrow band wavelength filters ensure delivery of the most accurate results! Pre-programmed to test over 40 water quality parameters with lab quality accuracy Fast, accurate results with EZ-3 Method Test results can be shared in real time via email or exported to a CSV spreadsheet with time date GPS locations when used with the eXact iDip® app 30-day satisfaction guarantee 2-year warranty."
           ],
@@ -164,9 +164,9 @@ const Products = () => {
         {
           name: "Bluetooth Standard Kit (NCW-486700-BT-K)",
           shortDescription: "The eXact® Micro 20 with Bluetooth® SMART basic configuration for general water quality testing.",
-          price: "$769.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "eXact®",
-          partNumber: "NCW-486700-BT-K",
+          // price: "$769.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "eXact®",
+          // partNumber: "NCW-486700-BT-K",
           details: [
             "The dual narrow band wavelength filters ensure delivery of the most accurate results! Pre-programmed to test over 40 water quality parameters with lab quality accuracy Fast, accurate results with EZ-3 Method Test results can be shared in real-time via email or exported to a CSV spreadsheet with time & date GPS locations when used with the eXact iDip® app 30-day satisfaction guarantee 2 year warranty."
           ],
@@ -186,14 +186,14 @@ const Products = () => {
       id: "visual-testing-kits",
       title: "Visual Testing Kits",
       description: "Professional visual water testing kits for accurate water quality analysis in various settings.",
-      image: "/lovable-uploads/a1f74804-36f8-4a85-b16e-47ff42591f16.png",
+      // image: "/lovable-uploads/a1f74804-36f8-4a85-b16e-47ff42591f16.png",
       products: [
         {
           name: "5-Way Water Check Eco Packs (NCW-480115) (W4H)",
           shortDescription: "Simple 5-way colour test strip for quick and accurate testing of Free Chlorine, Total Chlorine, pH, Total Alkalinity and Total Hardness in water.",
-          price: "Dhs. 66.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "WaterWorks™",
-          partNumber: "NCW-480115-W4H",
+          // price: "Dhs. 66.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "WaterWorks™",
+          // partNumber: "NCW-480115-W4H",
           details: [
             "It is a simple dip and read test strip with a precise colour chart on the back of the bottle and the results are shown within 30 seconds.", 
             "This broad use strip can test for these parameters in water across industries including swimming pools and spas. No other reagents or accessories are needed for this test. We use trace amounts of chemicals on our strips which makes them extremely safe and non-hazardous. They are considered as Articles under OSHA and do not require SDS sheets. This packaging is recyclable."
@@ -212,9 +212,9 @@ const Products = () => {
         {
           name: "Free & Total Chlorine Eco Packs (NCW-480655-W4H)",
           shortDescription: "WaterWorks Free Chlorine & Total Chlorine water quality test strips with patented Free Chlorine indicator.",
-          price: "$23.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "WaterWorks™",
-          partNumber: "NCW-480655",
+          // price: "$23.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "WaterWorks™",
+          // partNumber: "NCW-480655",
           details: [
             "All of the reagents are impregnated on the test strip pad, and no external chemicals are needed to perform the water quality test. Chlorination will destroy and deactivate disease producing microorganisms. Chlorination may introduce undesirable taste and odor. To monitor chlorination and minimize any adverse effects, proper testing should be performed routinely. Free Chlorine is a very effective disinfectant.", 
             "Total Chlorine is the combination of both Free (available) Chlorine and reacted Chlorine, or Chloramines. Chloramines are formed when Free Chlorine reacts with organic compounds. Chloramines are less effective at disinfection than Free Chlorine and may cause eye and skin irritation in addition to a strong Chlorine smell."
@@ -231,9 +231,9 @@ const Products = () => {
         {
           name: "Free Chlorine Water Check (NCW-481026-W4H)",
           shortDescription: "The ONLY EPA APPROVED test strip used for drinking water compliance monitoring with patented Free Chlorine indicator.",
-          price: "$24.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "SenSafe®",
-          partNumber: "NCW-481026",
+          // price: "$24.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "SenSafe®",
+          // partNumber: "NCW-481026",
           details: [
             "It is designed to resist interference from monochloramines. It is a simple dip and read test and you will have your result within 20 seconds. These strips can be used across industry from testing for Free Chlorine in swimming pools and spas to testing for sanitizer residue in food processing or tap water and other environments.",
             "Our patented aperture strips are unique in the way the water flows through them and detects the Free Chlorine much more accurately. We use trace amounts of chemicals on our strips which makes them extremely safe and non-hazardous. They are considered as Articles under OSHA and do not require SDS sheets."
@@ -248,9 +248,9 @@ const Products = () => {
         {
           name: "ITS Complete Home Water Quality Test Kit (NCW-481199)",
           shortDescription: "Complete home water quality test kit covering 13 essential water parameters.",
-          price: "Dhs. 102.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "ITS Europe",
-          partNumber: "NCW-481199",
+          // price: "Dhs. 102.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "ITS Europe",
+          // partNumber: "NCW-481199",
           details: [
             "This is a COMPLETE Home Water Quality Test Kit. It is a multi-parameter testing kit designed to screen for 13 water quality parameters. The COMPLETE Home Water Quality Test Kit is a simple, accurate solution for analyzing your water.", 
             "It is designed using unique, ITS patented strips, this kit is safe to use since it requires no powders, liquids, or tablets. Full results can be performed in the home with quick, accurate results. Tests for: Coliform Bacteria, Nitrate, Nitrite, Hydrogen Sulfide, Total Hardness, Total alkalinity, Total Chlorine, Free Chlorine, Chloride, Copper, Sulfate, Iron and pH."
@@ -280,9 +280,9 @@ const Products = () => {
         {
           name: "Pool Check 3in1 Eco pack (NCW-484335)",
           shortDescription: "Specialized test kit for pool and spa water, measuring Total Alkalinity, Free Chlorine/Bromine & pH.",
-          price: "Dhs. 30.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "Pool Check®",
-          partNumber: "NCW-484335",
+          // price: "Dhs. 30.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "Pool Check®",
+          // partNumber: "NCW-484335",
           details: [
             "3in1 Pool Check® has been specially designed to work in pools & spas with either chlorine and bromine systems. Economically priced, 3in1 Pool Check® is the ideal choice for the average pool & spa owner."
           ],
@@ -298,9 +298,9 @@ const Products = () => {
         {
           name: "Safe Well Check Home Well Water Test Kit (NCW-487941)",
           shortDescription: "Test kit specifically designed for well water, covering all essential parameters for home use.",
-          price: "Dhs. 34.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "Safe Tap Check™",
-          partNumber: "NCW-487941",
+          // price: "Dhs. 34.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "Safe Tap Check™",
+          // partNumber: "NCW-487941",
           details: [
             "Many of us still don't trust our tap or well water and so we buy more plastic, but the simple solution is to test our water and see what's really in there. Home water quality testing helps identify quickly that your water is safe and healthy to drink. The Safe Well Check™ Kit includes all the basic tests you need to test your own well water. It's accurate, affordable and super easy to use. Tests for: Total Hardness,Total Alkalinity, pH, Iron, Nitrate and Nitrite."
           ],
@@ -317,9 +317,9 @@ const Products = () => {
         {
           name: "UV Light (NCW-487199)",
           shortDescription: "UV light source for confirming the presence/absence of E. coli bacteria in test samples.",
-          price: "£26.57 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "ITS Europe",
-          partNumber: "NCW-487199",
+          // price: "£26.57 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "ITS Europe",
+          // partNumber: "NCW-487199",
           details: [
             "The UV light source is used to confirm the presence/absence of E. coli bacteria in the room temperature incubated EZ Coliform Cult (XGAL/MUG) positive test sample.",
             "365nm Light",
@@ -330,9 +330,9 @@ const Products = () => {
         {
           name: "ITS Water Quality Test Kit (NCW-487986)",
           shortDescription: "Most complete multi-parameter kit designed to screen for 16 of the USEPA top water quality parameter concerns.",
-          price: "Dhs. 141.00 Dhs. 169.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
-          manufacturer: "ITS Europe",
-          partNumber: "NCW-487986",
+          // price: "Dhs. 141.00 Dhs. 169.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          // manufacturer: "ITS Europe",
+          // partNumber: "NCW-487986",
           details: [
             "Designed using ITS patented and proprietary strips, this test kit is safe to use since it requires no powders, liquids, or tablets. Full results can be performed in the home, at a lab, or on-site. This is the easy, accurate and affordable way to do a full water check at home. Tests for an amazing 16 parameters!",
             "Drinking water is one of the most strictly regulated substances in the UK, and we should really be able to drink it without hesitation. According to the Water Supply Regulations, the local water companies have a duty to supply \"wholesome\" tap water and routinely monitor their water. However, what many consumers don't know is that the supplier's responsibility for the water ends at your house's supply pipes or the house water meter."
@@ -393,7 +393,7 @@ const Products = () => {
                   id={category.id}
                   title={category.title}
                   description={category.description}
-                  image={category.image}
+{/*                   image={category.image} */}
                   products={category.products}
                 />
               </AnimatedElement>
