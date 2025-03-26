@@ -175,7 +175,7 @@ const Index = () => {
                   About ENATECH
                 </span>
                 <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 leading-tight">
-                  Pioneering Smart Water <br className="hidden md:block" /> Solutions Since 2025
+                  Revolutionizing Smart Water <br className="hidden md:block" /> Solutions 
                 </h2>
                 <p className="text-gray-600">
                   ENATECH is a forward-thinking water solutions provider, dedicated to transforming how individuals, communities, and industries manage and utilize water. Our mission is to ensure clean, safe, and sustainable water through cutting-edge technology, innovative water quality testing and water treatment solutions, and expert agricultural advisory services.
