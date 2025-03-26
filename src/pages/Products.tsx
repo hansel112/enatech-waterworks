@@ -1,16 +1,11 @@
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
 import { Button } from '@/components/ui/button';
-import { 
-  ArrowRight, 
-  Check, 
-  Droplet, 
-  BeakerIcon, 
-  Filter,
-  Sun
-} from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import ProductCategory from '@/components/ProductCategory';
 
 const Products = () => {
   // Animation utility for fade-in effects
@@ -56,125 +51,307 @@ const Products = () => {
     );
   };
 
-  // Updated product categories and items with specific product images
+  // Updated product categories with new structure
   const productCategories = [
     {
-      id: "testing-kits",
-      title: "Water Testing Kits",
-      description: "Professional water testing kits for accurate water quality analysis in various settings.",
+      id: "smart-digital-testing-kits",
+      title: "Smart Digital Water Testing Kits",
+      description: "Advanced digital testing equipment with smartphone connectivity for professional water analysis.",
+      image: "/lovable-uploads/7c00f3a5-8b10-4f3d-bd87-6f7b5cb904d9.png",
+      products: [
+        {
+          name: "Multi Meter Kit (NCW-486301-W4H)",
+          shortDescription: "The new eXact pH+ Smart Meter System with Bluetooth® SMART is perfect for the detection of pH, Conductivity, Salinity, TDS, Temperature, and ORP.",
+          price: "$397.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "eXact®",
+          partNumber: "NCW-486301",
+          details: [
+            "ITS has developed an all new handheld multi-parameter pocket meter that works in conjunction with the eXact iDip® app for iOS and Android smart devices. The combination of this with the iDip® Photometer and the eXact iDip® app now allows for automatic calculations of formulas such as the Langelier Saturation Index."
+          ],
+          detects: [
+            "pH: 0.00 - 14.00",
+            "Temperature: 0 - 50 deg C",
+            "Salinity: 0 - 10.00 ppt",
+            "Conductivity: 0 - 2000μS",
+            "Total Dissolved Solids: 0.1ppm - 10 ppt"
+          ],
+          productContents: [
+            "Plastic carrying case w/ Foam includes",
+            "eXact® pH+ Smart Meter",
+            "eXact® pH+ Multi Probe (pH, Conductivity, Salinity, TDS, Temperature)",
+            "Premixed pH calibration solutions (4.00 and 7.00)",
+            "Premixed Conductivity calibration solutions (12.88 mS/cm and 1413 μS/cm)",
+            "Soaking solution (3M KCl)",
+            "Calibration bottles (4)",
+            "Lanyard",
+            "(Four AAA batteries sold separately)",
+            "pH+ sample collection bottle"
+          ],
+          image: "/lovable-uploads/ab258df3-231d-4062-9bb7-26d84ecdaace.png"
+        },
+        {
+          name: "Bluetooth Photometer (NCW-486700-BT-W4H)",
+          shortDescription: "The eXact® Micro 20 with Bluetooth® SMART is a powerful dual-wavelength photometer system that connects wirelessly to your smart device.",
+          price: "$689.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "eXact®",
+          partNumber: "NCW-486700-BT",
+          details: [
+            "The dual narrow band wavelength filters ensure delivery of the most accurate results! Pre-programmed to test over 40 water quality parameters with lab-quality accuracy.",
+            "Fast, accurate results with EZ-3 Method Test results can be shared in real-time via email or exported to a CSV spreadsheet with time/date GPS locations when used with the eXact iDip® app 30-day satisfaction guarantee 2-year warranty."
+          ],
+          detects: [
+            "Alkalinity, Total: (fresh) 10 - 210 ppm",
+            "Alkalinity, Total: (pool water) 8 - 200 ppm",
+            "Alkalinity, Total (marine): 25 - 200 ppm",
+            "Aluminum: 0.01 - 1.20 ppm",
+            "Ammonia: 0.02 - 2.40 ppm",
+            "Biguanide: 1.6 - 210 ppm",
+            "Bromine (DPD-4): 0.01 - 12.0 ppm",
+            "Calcium (as CaCO3): 20 - 400 ppm",
+            "Chloride (as NaCl) III: 3 - 270 ppm",
+            "Chloride (as NaCl) III HR: 50 - 5400 ppm",
+            "And 30+ more parameters"
+          ],
+          productContents: [
+            "Comes with basic components to start water testing",
+            "eXact® Micro 20 Photometer",
+            "Cleaning brush",
+            "Instruction manual",
+            "Carry case and reagent bottles NOT included",
+            "App available in 10 languages",
+            "4.25\"W x 7.25\"H x 2.25\"D | 10.8oz"
+          ],
+          image: "/lovable-uploads/28d236df-29cb-4a84-9446-11dd2ce41965.png"
+        },
+        {
+          name: "Bluetooth Well Drillers Kit (NCW-486700-BT-WD)",
+          shortDescription: "The eXact® Micro 20 with Bluetooth® SMART is a powerful dual-wavelength photometer system designed specifically for well water testing.",
+          price: "$887.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "eXact®",
+          partNumber: "NCW-486700-BT-WD",
+          details: [
+            "The dual narrow band wavelength filters ensure delivery of the most accurate results! Pre-programmed to test over 40 water quality parameters with lab-quality accuracy Fast, accurate results with EZ-3 Method Test results can be shared in real time via email or exported to a CSV spreadsheet with time & date GPS locations when used with the eXact iDip® app 30-day satisfaction guarantee 2-year warranty."
+          ],
+          productContents: [
+            "Large black plastic carrying case w/ Foam includes",
+            "Mini-dilution kit",
+            "eXact® Micro 20 Photometer",
+            "Cleaning brush",
+            "Instruction manual",
+            "25 tests of each: Total Alkalinity, pH,Free Chlorine (DPD-1), Combined/Total Chlorine (DPD-3), Total Hardness High, Phosphate, Copper, Manganese, Chloride (Salt), Total Iron, HR Chlorine, Nitrate"
+          ],
+          image: "/lovable-uploads/28d236df-29cb-4a84-9446-11dd2ce41965.png"
+        },
+        {
+          name: "Bluetooth Pool Kit (NCW-486700-BT-KP)",
+          shortDescription: "The eXact® Micro 20 with Bluetooth® SMART photometer system specially configured for pool and spa water testing.",
+          price: "$888.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "eXact®",
+          partNumber: "NCW-486700-BT-KP",
+          details: [
+            "The dual narrow band wavelength filters ensure delivery of the most accurate results! Pre-programmed to test over 40 water quality parameters with lab quality accuracy Fast, accurate results with EZ-3 Method Test results can be shared in real time via email or exported to a CSV spreadsheet with time date GPS locations when used with the eXact iDip® app 30-day satisfaction guarantee 2-year warranty."
+          ],
+          productContents: [
+            "Large black plastic carrying case w/ Foam includes",
+            "Mini-dilution kit",
+            "eXact® Micro 20 Bluetooth® Photometer",
+            "Cleaning brush",
+            "Instruction manual",
+            "25 tests of each: Total Alkalinity, pH, Free Chlorine (DPD-1), Combined/Total Chlorine (DPD-3), Calcium Hardness, Phosphate, Copper, Chloride (Salt), Biguanide, Total Iron, HR Chlorine, Nitrate, Cyanuric Acid"
+          ],
+          image: "/lovable-uploads/28d236df-29cb-4a84-9446-11dd2ce41965.png"
+        },
+        {
+          name: "Bluetooth Standard Kit (NCW-486700-BT-K)",
+          shortDescription: "The eXact® Micro 20 with Bluetooth® SMART basic configuration for general water quality testing.",
+          price: "$769.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "eXact®",
+          partNumber: "NCW-486700-BT-K",
+          details: [
+            "The dual narrow band wavelength filters ensure delivery of the most accurate results! Pre-programmed to test over 40 water quality parameters with lab quality accuracy Fast, accurate results with EZ-3 Method Test results can be shared in real-time via email or exported to a CSV spreadsheet with time & date GPS locations when used with the eXact iDip® app 30-day satisfaction guarantee 2 year warranty."
+          ],
+          productContents: [
+            "Large black plastic carrying case w/ Foam includes",
+            "Mini-dilution kit",
+            "eXact® Micro 20 Photometer",
+            "Cleaning brush",
+            "Instruction manual",
+            "25 tests of each: Free Chlorine (DPD-1), Combined/Total Chlorine (DPD-3)"
+          ],
+          image: "/lovable-uploads/28d236df-29cb-4a84-9446-11dd2ce41965.png"
+        }
+      ]
+    },
+    {
+      id: "visual-testing-kits",
+      title: "Visual Testing Kits",
+      description: "Professional visual water testing kits for accurate water quality analysis in various settings.",
       image: "/lovable-uploads/66b87e9c-21c7-4073-92a8-589f8554ee52.png",
       products: [
         {
           name: "5-Way Water Check Eco Packs (NCW-480115) (W4H)",
-          description: "Comprehensive water testing kit for 5 essential water parameters.",
-          features: [
-            "Tests for 5 critical water parameters",
-            "Easy to use with quick results",
-            "Eco-friendly packaging",
-            "Ideal for home and light commercial use"
+          shortDescription: "Simple 5-way colour test strip for quick and accurate testing of Free Chlorine, Total Chlorine, pH, Total Alkalinity and Total Hardness in water.",
+          price: "Dhs. 66.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "WaterWorks™",
+          partNumber: "NCW-480115-W4H",
+          details: [
+            "It is a simple dip and read test strip with a precise colour chart on the back of the bottle and the results are shown within 30 seconds.", 
+            "This broad use strip can test for these parameters in water across industries including swimming pools and spas. No other reagents or accessories are needed for this test. We use trace amounts of chemicals on our strips which makes them extremely safe and non-hazardous. They are considered as Articles under OSHA and do not require SDS sheets. This packaging is recyclable."
           ],
-          icon: <Droplet size={24} />,
+          detects: [
+            "Total Hardness: 0, 25, 50, 120, 250, 425 ppm (mg/L)",
+            "Total Chlorine: 0, 0.5, 1, 2, 4, 10 ppm (mg/L)",
+            "Free Chlorine: 0, 0.5, 1, 2, 4, 10 ppm (mg/L)",
+            "Total Alkalinity: 0, 40, 80, 120, 180, 240 ppm (mg/L)",
+            "pH: 6.2, 6.8, 7.2, 7.8, 8.4 pH"
+          ],
+          testQuantity: "30 tests",
+          parameters: "5/strip",
           image: "/lovable-uploads/c66c7de0-b113-4ae5-a617-48b41b7a8bac.png"
         },
         {
           name: "Free & Total Chlorine Eco Packs (NCW-480655-W4H)",
-          description: "Specialized kit for measuring both free and total chlorine levels in water.",
-          features: [
-            "Accurate chlorine measurement",
-            "Environmentally friendly design",
-            "Complete with all testing supplies",
-            "Simple color-matching system"
+          shortDescription: "WaterWorks Free Chlorine & Total Chlorine water quality test strips with patented Free Chlorine indicator.",
+          price: "$23.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "WaterWorks™",
+          partNumber: "NCW-480655",
+          details: [
+            "All of the reagents are impregnated on the test strip pad, and no external chemicals are needed to perform the water quality test. Chlorination will destroy and deactivate disease producing microorganisms. Chlorination may introduce undesirable taste and odor. To monitor chlorination and minimize any adverse effects, proper testing should be performed routinely. Free Chlorine is a very effective disinfectant.", 
+            "Total Chlorine is the combination of both Free (available) Chlorine and reacted Chlorine, or Chloramines. Chloramines are formed when Free Chlorine reacts with organic compounds. Chloramines are less effective at disinfection than Free Chlorine and may cause eye and skin irritation in addition to a strong Chlorine smell."
           ],
-          icon: <BeakerIcon size={24} />,
+          detects: [
+            "Free Chlorine 0.0, 0.1, 0.2, 0.5, 1.0, 2.5, 4.0*, 5.0 ppm (mg/L)",
+            "Total Chlorine 0.0, 0.1, 0.2, 0.5, 1.0, 2.5, 4.0*, 5.0 ppm (mg/L)",
+            "EPA Maximum Contaminant Level"
+          ],
+          testQuantity: "30 tests",
+          parameters: "1/strip",
           image: "/lovable-uploads/bf338c63-ac3c-4d29-96bc-40037f49f9f0.png"
         },
         {
           name: "Free Chlorine Water Check (NCW-481026-W4H)",
-          description: "Focused test kit for free chlorine levels in drinking water and pools.",
-          features: [
-            "Precise free chlorine measurement",
-            "Quick results within minutes",
-            "Easy-to-read color chart",
-            "Multiple tests per package"
+          shortDescription: "The ONLY EPA APPROVED test strip used for drinking water compliance monitoring with patented Free Chlorine indicator.",
+          price: "$24.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "SenSafe®",
+          partNumber: "NCW-481026",
+          details: [
+            "It is designed to resist interference from monochloramines. It is a simple dip and read test and you will have your result within 20 seconds. These strips can be used across industry from testing for Free Chlorine in swimming pools and spas to testing for sanitizer residue in food processing or tap water and other environments.",
+            "Our patented aperture strips are unique in the way the water flows through them and detects the Free Chlorine much more accurately. We use trace amounts of chemicals on our strips which makes them extremely safe and non-hazardous. They are considered as Articles under OSHA and do not require SDS sheets."
           ],
-          icon: <Filter size={24} />,
+          detects: [
+            "0.0, 0.05, 0.1, 0.2 0.4, 0.6, 0.8, 1.2, 1.5, 2.0, 2.6, 4.0,>6.0 ppm (mg/L)"
+          ],
+          testQuantity: "50 tests",
+          parameters: "1/strip",
           image: "/lovable-uploads/63b79d61-5e4d-4913-ab40-033862133b30.png"
-        }
-      ]
-    },
-    {
-      id: "home-testing",
-      title: "Home Water Testing Solutions",
-      description: "Complete testing solutions for residential water quality monitoring.",
-      image: "/lovable-uploads/ef956ade-0e64-430e-b58c-726187e21d80.png",
-      products: [
+        },
         {
           name: "ITS Complete Home Water Quality Test Kit (NCW-481199)",
-          description: "Comprehensive home test kit that covers all essential water quality parameters.",
-          features: [
-            "Tests for multiple contaminants",
-            "Complete with detailed instructions",
-            "Lab-grade accuracy for home use",
-            "Includes water quality guide"
+          shortDescription: "Complete home water quality test kit covering 13 essential water parameters.",
+          price: "Dhs. 102.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "ITS Europe",
+          partNumber: "NCW-481199",
+          details: [
+            "This is a COMPLETE Home Water Quality Test Kit. It is a multi-parameter testing kit designed to screen for 13 water quality parameters. The COMPLETE Home Water Quality Test Kit is a simple, accurate solution for analyzing your water.", 
+            "It is designed using unique, ITS patented strips, this kit is safe to use since it requires no powders, liquids, or tablets. Full results can be performed in the home with quick, accurate results. Tests for: Coliform Bacteria, Nitrate, Nitrite, Hydrogen Sulfide, Total Hardness, Total alkalinity, Total Chlorine, Free Chlorine, Chloride, Copper, Sulfate, Iron and pH."
           ],
-          icon: <BeakerIcon size={24} />,
+          detects: [
+            "Coliform Bacteria & E. coli: Positive/Negative",
+            "Copper: 0.0, 0.1, 0.5, 1.0, 2.0 ppm (mg/l)",
+            "Chloride Check: 0, 250, 500 ppm (mg/l)",
+            "Free Chlorine: 0.0, 0.05, 0.2, 0.6, 1.5, 4.0, 10 ppm (mg/l)",
+            "And 9 more parameters"
+          ],
+          productContents: [
+            "1 x Coliform Bacteria & E. coli",
+            "2 x Copper Test Strips",
+            "2 x Chloride Check Test Strips",
+            "2 x Free Chlorine Test Strips",
+            "2 x Hydrogen Sulfide Test Strips",
+            "2 x Iron Test Strips",
+            "2 x Nitrate/Nitrite Test Strips",
+            "2 x pH / Total Alkalinity / Total Hardness Test Strips",
+            "2 x Sulfate Test Strips",
+            "2 x Total Chlorine Test Strips"
+          ],
+          testQuantity: "25 Tests (13 Parameters)",
           image: "/lovable-uploads/19815630-d5e6-421e-af0f-341911b75fd3.png"
         },
         {
-          name: "Safe Well Check Home Well Water Test Kit (NCW-487941)",
-          description: "Specialized kit designed specifically for testing private well water quality.",
-          features: [
-            "Targets well-specific contaminants",
-            "Tests for bacteria and chemicals",
-            "Simple testing procedure",
-            "Detailed results interpretation guide"
-          ],
-          icon: <Droplet size={24} />,
-          image: "/lovable-uploads/3d309d15-0a83-4407-8e7f-a1b87bdd992a.png"
-        },
-        {
-          name: "ITS Water Quality Test Kit (NCW-487986)",
-          description: "Professional-grade water quality testing kit with comprehensive parameter coverage.",
-          features: [
-            "Wide range of water quality indicators",
-            "Professional accuracy standards",
-            "Reusable components where possible",
-            "Digital result recording options"
-          ],
-          icon: <Filter size={24} />,
-          image: "/lovable-uploads/fa5c545e-3ebf-4c7d-84e5-c531e8647f3f.png"
-        }
-      ]
-    },
-    {
-      id: "specialized-testing",
-      title: "Specialized Testing Equipment",
-      description: "Specialized equipment for specific water testing applications.",
-      image: "/lovable-uploads/59bb6d42-163d-45b3-9753-413ddf75a599.png",
-      products: [
-        {
           name: "Pool Check 3in1 Eco pack (NCW-484335)",
-          description: "Specialized test kit for pool and spa water, measuring Total Alkalinity, Free Chlorine/Bromine & pH.",
-          features: [
-            "3-in-1 testing capability",
-            "Eco-friendly packaging",
-            "Perfect for pool maintenance",
-            "Clear color-coded results"
+          shortDescription: "Specialized test kit for pool and spa water, measuring Total Alkalinity, Free Chlorine/Bromine & pH.",
+          price: "Dhs. 30.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "Pool Check®",
+          partNumber: "NCW-484335",
+          details: [
+            "3in1 Pool Check® has been specially designed to work in pools & spas with either chlorine and bromine systems. Economically priced, 3in1 Pool Check® is the ideal choice for the average pool & spa owner."
           ],
-          icon: <BeakerIcon size={24} />,
+          detects: [
+            "Total Alkalinity: 0, 40, 80, 120, 180, 240, 360 ppm (mg/L)",
+            "Free Chlorine: 0, 0.5, 1, 3, 5, 10, 20 ppm (mg/L)",
+            "pH: 6.0, 6.4, 6.8, 7.2, 7.6, 8.2, 9.0 pH"
+          ],
+          testQuantity: "10 tests",
+          parameters: "3/strip",
           image: "/lovable-uploads/8b5ceb47-9caa-4074-9c1f-cdaaa4679723.png"
         },
         {
-          name: "UV Light (NCW-487199)",
-          description: "UV light for specialized water quality testing and verification procedures.",
-          features: [
-            "Portable UV light source",
-            "Battery powered for field use",
-            "Detects fluorescent markers",
-            "Durable construction"
+          name: "Safe Well Check Home Well Water Test Kit (NCW-487941)",
+          shortDescription: "Test kit specifically designed for well water, covering all essential parameters for home use.",
+          price: "Dhs. 34.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "Safe Tap Check™",
+          partNumber: "NCW-487941",
+          details: [
+            "Many of us still don't trust our tap or well water and so we buy more plastic, but the simple solution is to test our water and see what's really in there. Home water quality testing helps identify quickly that your water is safe and healthy to drink. The Safe Well Check™ Kit includes all the basic tests you need to test your own well water. It's accurate, affordable and super easy to use. Tests for: Total Hardness,Total Alkalinity, pH, Iron, Nitrate and Nitrite."
           ],
-          icon: <Sun size={24} />,
+          detects: [
+            "Alkalinity: 0, 40, 80, 120, 180, 240, 500 ppm (mg/L)",
+            "Total Hardness: 0, 50, 80, 120, 180, 240, 500 ppm (mg/L)",
+            "Nitrate (as N): 0, 2.0, 10, 20, 50 ppm (mg/L)",
+            "Nitrite (as N): 0.2, 1.0, 1.5, 3.0 ppm (mg/L)",
+            "Iron (Fe+2): 0.0, 0.05, 0.1, 0.3, 1.0 ppm (mg/L)",
+            "pH: 2.0, 4.0, 5.0, 6.5, 8.5, 9.5, 10.5, 12.0 pH"
+          ],
+          image: "/lovable-uploads/3d309d15-0a83-4407-8e7f-a1b87bdd992a.png"
+        },
+        {
+          name: "UV Light (NCW-487199)",
+          shortDescription: "UV light source for confirming the presence/absence of E. coli bacteria in test samples.",
+          price: "£26.57 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "ITS Europe",
+          partNumber: "NCW-487199",
+          details: [
+            "The UV light source is used to confirm the presence/absence of E. coli bacteria in the room temperature incubated EZ Coliform Cult (XGAL/MUG) positive test sample.",
+            "365nm Light",
+            "Super bright LEDs will last for over 100 hours"
+          ],
           image: "/lovable-uploads/de2c6f0c-ab2e-46a4-b25a-e5f6b100fb78.png"
+        },
+        {
+          name: "ITS Water Quality Test Kit (NCW-487986)",
+          shortDescription: "Most complete multi-parameter kit designed to screen for 16 of the USEPA top water quality parameter concerns.",
+          price: "Dhs. 141.00 Dhs. 169.00 (Net Price excluding applicable; VAT, Customs Duty, Delivery Cost)",
+          manufacturer: "ITS Europe",
+          partNumber: "NCW-487986",
+          details: [
+            "Designed using ITS patented and proprietary strips, this test kit is safe to use since it requires no powders, liquids, or tablets. Full results can be performed in the home, at a lab, or on-site. This is the easy, accurate and affordable way to do a full water check at home. Tests for an amazing 16 parameters!",
+            "Drinking water is one of the most strictly regulated substances in the UK, and we should really be able to drink it without hesitation. According to the Water Supply Regulations, the local water companies have a duty to supply \"wholesome\" tap water and routinely monitor their water. However, what many consumers don't know is that the supplier's responsibility for the water ends at your house's supply pipes or the house water meter."
+          ],
+          detects: [
+            "Bacteria: 5cfu/ml Positive/Negative",
+            "Chloride: 0, 250, 500 ppm (mg/l)",
+            "Copper: 0.0, 0.1, 0.5, 1.0, 2.0 ppm (mg/l)",
+            "Free Chlorine: 0, 0.05, 0.2, 0.6, 1.5, 4.0, 10 ppm (mg/l)",
+            "And 12 more parameters"
+          ],
+          productContents: [
+            "1 x Coliform Bacteria",
+            "2 x Chloride Test Strips",
+            "2 x Copper Test Strips",
+            "And multiple other test strips"
+          ],
+          testQuantity: "29 Tests (16 Parameters)",
+          image: "/lovable-uploads/fa5c545e-3ebf-4c7d-84e5-c531e8647f3f.png"
         }
       ]
     }
@@ -186,7 +363,7 @@ const Products = () => {
       <HeroSection 
         title="Products & Equipment"
         subtitle="Professional water testing kits for accurate quality analysis"
-        backgroundImage="/lovable-uploads/8e706d3b-4651-4d7b-8a73-4850846ccf97.png"
+        backgroundImage="/lovable-uploads/a66d079a-8506-4561-b74e-908fe681e340.png"
         size="medium"
       />
       
@@ -209,70 +386,17 @@ const Products = () => {
           </AnimatedElement>
           
           {/* Product Categories */}
-          <div className="space-y-32">
+          <div className="space-y-20">
             {productCategories.map((category, index) => (
-              <div 
-                key={category.id} 
-                id={category.id}
-                className={`scroll-mt-24 ${index !== 0 ? 'pt-8' : ''}`}
-              >
-                <div className={`grid grid-cols-1 ${index % 2 === 0 ? 'md:grid-cols-[3fr_2fr]' : 'md:grid-cols-[2fr_3fr] md:flex-row-reverse'} gap-12 items-center`}>
-                  <AnimatedElement delay={100}>
-                    <div className="space-y-6">
-                      <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 leading-tight">
-                        {category.title}
-                      </h2>
-                      <p className="text-xl text-enatech-blue">{category.description}</p>
-                      
-                      <div className="space-y-8 pt-4">
-                        {category.products.map((product, i) => (
-                          <div key={i} className="bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                            <div className="flex flex-col md:flex-row items-start gap-4">
-                              <div className="bg-white rounded-lg p-4 text-enatech-blue-dark border border-gray-200 shadow-sm w-full md:w-1/3 flex justify-center items-center">
-                                <img 
-                                  src={product.image} 
-                                  alt={product.name}
-                                  className="object-contain max-h-48"
-                                />
-                              </div>
-                              <div className="w-full md:w-2/3">
-                                <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h3>
-                                <p className="text-gray-600 mb-4">{product.description}</p>
-                                
-                                <h4 className="font-medium text-gray-800 mb-2">Features:</h4>
-                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
-                                  {product.features.map((feature, j) => (
-                                    <li key={j} className="flex items-start">
-                                      <Check className="text-enatech-green mr-2 mt-1 h-4 w-4 flex-shrink-0" />
-                                      <span className="text-gray-600 text-sm">{feature}</span>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </AnimatedElement>
-                  
-                  <AnimatedElement delay={300}>
-                    <div className="rounded-xl overflow-hidden shadow-xl h-[400px]">
-                      <img 
-                        src={category.image}
-                        alt={category.title}
-                        className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
-                      />
-                    </div>
-                  </AnimatedElement>
-                </div>
-                
-                {index < productCategories.length - 1 && (
-                  <div className="flex justify-center mt-16">
-                    <div className="w-24 h-px bg-gray-200"></div>
-                  </div>
-                )}
-              </div>
+              <AnimatedElement key={category.id} delay={200}>
+                <ProductCategory
+                  id={category.id}
+                  title={category.title}
+                  description={category.description}
+                  image={category.image}
+                  products={category.products}
+                />
+              </AnimatedElement>
             ))}
           </div>
         </div>

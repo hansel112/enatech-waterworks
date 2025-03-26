@@ -69,7 +69,7 @@ const About = () => {
       <HeroSection 
         title="About ENATECH"
         subtitle="Revolutionizing sustainable water quality solutions through innovation and expertise"
-        backgroundImage="/lovable-uploads/fc15edfe-9f31-4fbc-864c-6a9a5d07301b.png"
+        backgroundImage="/lovable-uploads/a66d079a-8506-4561-b74e-908fe681e340.png"
         overlayOpacity="medium"
         size="medium"
       />
@@ -81,7 +81,7 @@ const About = () => {
             <AnimatedElement delay={100}>
               <div className="relative rounded-xl overflow-hidden h-[400px] md:h-[500px] shadow-xl">
                 <img 
-                  src="/lovable-uploads/cfc6fdd5-bc96-4202-8ced-5767e7d17c7b.png" 
+                  src="/lovable-uploads/ec3de48e-f851-4dd4-ba96-f025d2dd04aa.png" 
                   alt="ENATECH company history" 
                   className="w-full h-full object-cover"
                 />
@@ -106,12 +106,6 @@ const About = () => {
                   ENATECH's expertise covers, Smart irrigation planning, Solar Water Pumping Systems, Sustainable 
                   Water Use Strategies, Training and Capacity Building for Farmers.
                 </p>
-{/*                 <p className="text-gray-600">
-                  ENATECH has an expert team of certified professionals with years of experience in water science 
-                  and Agriculture, reliable State-of-the-art testing equipment and treatment systems, client 
-                  focused and customized solutions to fit your specific needs and budget, sustainable Practices 
-                  that promote eco-friendly and resource-efficient water use.
-                </p> */}
               </div>
             </AnimatedElement>
           </div>
@@ -168,7 +162,6 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Innovation</h4>
-                      <p className="text-gray-600">We harness technology and creativity to pioneer advanced water management and treatment solutions.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -177,7 +170,6 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Sustainability</h4>
-                      <p className="text-gray-600">We are committed to eco-conscious practices that preserve water resources for future generations.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -186,7 +178,6 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Integrity</h4>
-                      <p className="text-gray-600">We uphold the highest standards of honesty, accountability, and professionalism in all our engagements.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -195,25 +186,6 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Excellence</h4>
-                      <p className="text-gray-600">We strive for precision, reliability, and quality in every service, product, and solution we offer.</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="rounded-full p-1 bg-enatech-green-light text-enatech-green-dark mr-3 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    </div>
-                    <div>
-                      <h4 className="font-medium text-gray-800">Collaboration</h4>
-                      <p className="text-gray-600">We value partnerships and co-create solutions with our clients, aligning with their unique goals and challenges.</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="rounded-full p-1 bg-enatech-green-light text-enatech-green-dark mr-3 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    </div>
-                    <div>
-                      <h4 className="font-medium text-gray-800">Empowerment</h4>
-                      <p className="text-gray-600">We enable informed decision-making through education, training, and expert advisory, fostering self-reliance and growth.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -222,7 +194,6 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Customer-Centricity</h4>
-                      <p className="text-gray-600">We prioritize our clients' needs, delivering tailored, impactful, and cost-effective solutions that drive value.</p>
                     </div>
                   </li>
                 </ul>
