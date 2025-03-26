@@ -65,23 +65,23 @@ const About = () => {
 
   return (
     <main className="min-h-screen pt-16">
-      {/* Hero Section */}
+      {/* Hero Section - Updated background image */}
       <HeroSection 
         title="About ENATECH"
         subtitle="Revolutionizing sustainable water quality solutions through innovation and expertise"
-        backgroundImage="/lovable-uploads/a66d079a-8506-4561-b74e-908fe681e340.png"
+        backgroundImage="/lovable-uploads/3b521320-c577-454c-94ee-2617f2061872.png"
         overlayOpacity="medium"
         size="medium"
       />
       
-      {/* Our Story Section */}
+      {/* Our Story Section - Updated image */}
       <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <AnimatedElement delay={100}>
               <div className="relative rounded-xl overflow-hidden h-[400px] md:h-[500px] shadow-xl">
                 <img 
-                  src="/lovable-uploads/ec3de48e-f851-4dd4-ba96-f025d2dd04aa.png" 
+                  src="/lovable-uploads/666eed2b-2b8b-49b6-b2d6-85f0a3c98fbd.png" 
                   alt="ENATECH company history" 
                   className="w-full h-full object-cover"
                 />

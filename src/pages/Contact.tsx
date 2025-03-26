@@ -72,11 +72,11 @@ const Contact = () => {
 
   return (
     <main className="min-h-screen pt-16">
-      {/* Hero Section */}
+      {/* Hero Section - Updated background image */}
       <HeroSection 
         title="Contact Us"
         subtitle="Get in touch with our team for consultations, quotes, or inquiries"
-        backgroundImage="/lovable-uploads/9dc34a8c-0d61-4182-ad37-e226e6822728.png"
+        backgroundImage="/lovable-uploads/326185f4-3855-422a-bb5a-5e0a5973e512.png"
         size="small"
         alignment="left"
       />

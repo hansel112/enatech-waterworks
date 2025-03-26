@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
@@ -106,11 +105,11 @@ const Services = () => {
 
   return (
     <main className="min-h-screen pt-16">
-      {/* Hero Section */}
+      {/* Hero Section - Updated background image */}
       <HeroSection 
         title="Our Services"
         subtitle="Smart solutions for water quality, treatment, and agricultural advisory"
-        backgroundImage="https://images.unsplash.com/photo-1501854140801-50d01698950b"
+        backgroundImage="/lovable-uploads/9e6049cf-cfb5-4cb7-8a72-bbb39e614f78.png"
         size="medium"
       />
       

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
@@ -363,7 +362,7 @@ const Products = () => {
       <HeroSection 
         title="Products & Equipment"
         subtitle="Professional water testing kits for accurate quality analysis"
-        backgroundImage="/lovable-uploads/a66d079a-8506-4561-b74e-908fe681e340.png"
+        backgroundImage="/lovable-uploads/aa128448-8e41-41fd-be53-942aaf2ee5b9.png"
         size="medium"
       />
       
