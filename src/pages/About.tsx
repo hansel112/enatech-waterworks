@@ -94,7 +94,7 @@ const About = () => {
                   About Us
                 </span>
                 <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 leading-tight">
-                  A Vision for Smart Water Management
+                  Innovating Sustainable Water Solutions for a Better Future
                 </h2>
                 <p className="text-gray-600">
                   ENATECH is a forward-thinking water solutions provider, dedicated to transforming how individuals, 
@@ -102,10 +102,10 @@ const About = () => {
                   sustainable water through cutting-edge technology, innovative water quality testing and water 
                   treatment solutions, and expert agricultural advisory services.
                 </p>
-                <p className="text-gray-600">
+{/*                 <p className="text-gray-600">
                   ENATECH's expertise covers, Smart irrigation planning, Solar Water Pumping Systems, Sustainable 
                   Water Use Strategies, Training and Capacity Building for Farmers.
-                </p>
+                </p> */}
               </div>
             </AnimatedElement>
           </div>
