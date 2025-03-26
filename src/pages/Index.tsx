@@ -63,42 +63,67 @@ const Index = () => {
     {
       title: "5-Way Water Check Eco Packs (NCW-480115) (W4H)",
       imageSrc: "/lovable-uploads/c66c7de0-b113-4ae5-a617-48b41b7a8bac.png",
-      link: "/products#testing-kits"
+      link: "/products#visual-testing-kits"
     },
     {
       title: "Free & Total Chlorine Eco Packs (NCW-480655-W4H)",
       imageSrc: "/lovable-uploads/bf338c63-ac3c-4d29-96bc-40037f49f9f0.png",
-      link: "/products#testing-kits"
+      link: "/products#visual-testing-kits"
     },
     {
       title: "Free Chlorine Water Check (NCW-481026-W4H)",
       imageSrc: "/lovable-uploads/63b79d61-5e4d-4913-ab40-033862133b30.png",
-      link: "/products#testing-kits"
+      link: "/products#visual-testing-kits"
     },
     {
       title: "ITS Complete Home Water Quality Test Kit (NCW-481199)",
       imageSrc: "/lovable-uploads/19815630-d5e6-421e-af0f-341911b75fd3.png",
-      link: "/products#home-testing"
+      link: "/products#visual-testing-kits"
     },
     {
       title: "Pool Check 3in1 Eco pack (NCW-484335)",
       imageSrc: "/lovable-uploads/8b5ceb47-9caa-4074-9c1f-cdaaa4679723.png",
-      link: "/products#specialized-testing"
+      link: "/products#visual-testing-kits"
     },
     {
       title: "Safe Well Check Home Well Water Test Kit (NCW-487941)",
       imageSrc: "/lovable-uploads/3d309d15-0a83-4407-8e7f-a1b87bdd992a.png",
-      link: "/products#home-testing"
+      link: "/products#visual-testing-kits"
     },
     {
       title: "UV Light (NCW-487199)",
       imageSrc: "/lovable-uploads/de2c6f0c-ab2e-46a4-b25a-e5f6b100fb78.png",
-      link: "/products#specialized-testing"
+      link: "/products#visual-testing-kits"
     },
     {
       title: "ITS Water Quality Test Kit (NCW-487986)",
       imageSrc: "/lovable-uploads/fa5c545e-3ebf-4c7d-84e5-c531e8647f3f.png",
-      link: "/products#home-testing"
+      link: "/products#visual-testing-kits"
+    },
+    {
+      title: "Multi Meter Kit (NCW-486301-W4H)",
+      imageSrc: "/lovable-uploads/f258aad8-5783-4cbf-bdbc-daa6450ecef8.png",
+      link: "/products#smart-digital-testing-kits"
+    },
+    {
+      title: "Bluetooth Photometer (NCW-486700-BT-W4H)",
+      imageSrc: "/lovable-uploads/c1698f0e-6eb3-48e5-b782-501f8aa10e0a.png",
+      link: "/products#smart-digital-testing-kits"
+    },
+    {
+      title: "Bluetooth Well Drillers Kit (NCW-486700-BT-WD)",
+      imageSrc: "/lovable-uploads/59a21518-d699-468c-b068-9782f312d892.png",
+      link: "/products#smart-digital-testing-kits"
+    },
+    {
+      title: "Bluetooth Pool Kit (NCW-486700-BT-KP)",
+      imageSrc: "/lovable-uploads/e0974b0a-2ba8-4228-824e-d122e1b4488d.png",
+      link: "/products#smart-digital-testing-kits"
+    },
+    {
+      title: "Bluetooth Standard Kit (NCW-486700-BT-K)",
+      imageSrc: "/lovable-uploads/7ad22af4-e0a5-4155-b7c7-3bd8e02c0579.png",
+      link: "/products#smart-digital-testing-kits"
     }
   ];
 

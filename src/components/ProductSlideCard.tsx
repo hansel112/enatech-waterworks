@@ -30,7 +30,7 @@ const ProductSlideCard: React.FC<ProductSlideCardProps> = ({
           className="max-h-full max-w-full object-contain"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4">
-          <h3 className="text-xl font-serif font-semibold text-white mb-3">{title}</h3>
+          <h3 className="text-lg font-serif font-semibold text-white mb-3 line-clamp-2">{title}</h3>
           <Button 
             asChild 
             className="bg-enatech-blue hover:bg-enatech-blue-dark group w-auto text-xs py-1 h-7 px-2"
