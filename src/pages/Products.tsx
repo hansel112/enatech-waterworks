@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/HeroSection';
@@ -86,7 +87,7 @@ const Products = () => {
             "(Four AAA batteries sold separately)",
             "pH+ sample collection bottle"
           ],
-          image: "/lovable-uploads/96ab31a0-65ef-4681-9c79-d06eaee71cd0.png"
+          image: "/lovable-uploads/233aae6e-e251-4a7d-be6b-b5736af80637.png"
         },
         {
           name: "Bluetooth Photometer (NCW-486700-BT-W4H)",
@@ -120,7 +121,7 @@ const Products = () => {
             "App available in 10 languages",
             "4.25\"W x 7.25\"H x 2.25\"D | 10.8oz"
           ],
-          image: "/lovable-uploads/41e3322b-d8a5-4312-9011-724d5498daf3.png"
+          image: "/lovable-uploads/26db3820-f5d2-4754-808b-e1656b6a6cc8.png"
         },
         {
           name: "Bluetooth Well Drillers Kit (NCW-486700-BT-WD)",
@@ -139,7 +140,7 @@ const Products = () => {
             "Instruction manual",
             "25 tests of each: Total Alkalinity, pH,Free Chlorine (DPD-1), Combined/Total Chlorine (DPD-3), Total Hardness High, Phosphate, Copper, Manganese, Chloride (Salt), Total Iron, HR Chlorine, Nitrate"
           ],
-          image: "/lovable-uploads/1a28ca5e-e289-41ba-b18c-91f36e2e6cb9.png"
+          image: "/lovable-uploads/5ccdf875-256f-4d56-8fcc-6720f1fa6f91.png"
         },
         {
           name: "Bluetooth Pool Kit (NCW-486700-BT-KP)",
@@ -158,7 +159,7 @@ const Products = () => {
             "Instruction manual",
             "25 tests of each: Total Alkalinity, pH, Free Chlorine (DPD-1), Combined/Total Chlorine (DPD-3), Calcium Hardness, Phosphate, Copper, Chloride (Salt), Biguanide, Total Iron, HR Chlorine, Nitrate, Cyanuric Acid"
           ],
-          image: "/lovable-uploads/723e13e5-b19b-4b93-97e4-631013abe92d.png"
+          image: "/lovable-uploads/2a9a1c66-bea1-41e4-9224-2c04fe46ce14.png"
         },
         {
           name: "Bluetooth Standard Kit (NCW-486700-BT-K)",
@@ -177,7 +178,7 @@ const Products = () => {
             "Instruction manual",
             "25 tests of each: Free Chlorine (DPD-1), Combined/Total Chlorine (DPD-3)"
           ],
-          image: "/lovable-uploads/b2a3e8b5-6890-4428-a229-acea57800f4e.png"
+          image: "/lovable-uploads/23ac5b43-d890-4556-ab4e-ea3ffd6bef27.png"
         }
       ]
     },
