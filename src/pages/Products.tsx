@@ -50,13 +50,13 @@ const Products = () => {
     );
   };
 
-  // Updated product categories with new structure
+  // Updated product categories with new images
   const productCategories = [
     {
       id: "smart-digital-testing-kits",
       title: "Smart Digital Water Testing Kits",
       description: "Advanced digital testing equipment with smartphone connectivity for professional water analysis.",
-      image: "/lovable-uploads/7c00f3a5-8b10-4f3d-bd87-6f7b5cb904d9.png",
+      image: "/lovable-uploads/d93b3e4a-8ca5-48d6-b03c-1b6dadc9b818.png",
       products: [
         {
           name: "Multi Meter Kit (NCW-486301-W4H)",
@@ -86,7 +86,7 @@ const Products = () => {
             "(Four AAA batteries sold separately)",
             "pH+ sample collection bottle"
           ],
-          image: "/lovable-uploads/ab258df3-231d-4062-9bb7-26d84ecdaace.png"
+          image: "/lovable-uploads/96ab31a0-65ef-4681-9c79-d06eaee71cd0.png"
         },
         {
           name: "Bluetooth Photometer (NCW-486700-BT-W4H)",
@@ -120,7 +120,7 @@ const Products = () => {
             "App available in 10 languages",
             "4.25\"W x 7.25\"H x 2.25\"D | 10.8oz"
           ],
-          image: "/lovable-uploads/28d236df-29cb-4a84-9446-11dd2ce41965.png"
+          image: "/lovable-uploads/41e3322b-d8a5-4312-9011-724d5498daf3.png"
         },
         {
           name: "Bluetooth Well Drillers Kit (NCW-486700-BT-WD)",
@@ -139,7 +139,7 @@ const Products = () => {
             "Instruction manual",
             "25 tests of each: Total Alkalinity, pH,Free Chlorine (DPD-1), Combined/Total Chlorine (DPD-3), Total Hardness High, Phosphate, Copper, Manganese, Chloride (Salt), Total Iron, HR Chlorine, Nitrate"
           ],
-          image: "/lovable-uploads/28d236df-29cb-4a84-9446-11dd2ce41965.png"
+          image: "/lovable-uploads/1a28ca5e-e289-41ba-b18c-91f36e2e6cb9.png"
         },
         {
           name: "Bluetooth Pool Kit (NCW-486700-BT-KP)",
@@ -158,7 +158,7 @@ const Products = () => {
             "Instruction manual",
             "25 tests of each: Total Alkalinity, pH, Free Chlorine (DPD-1), Combined/Total Chlorine (DPD-3), Calcium Hardness, Phosphate, Copper, Chloride (Salt), Biguanide, Total Iron, HR Chlorine, Nitrate, Cyanuric Acid"
           ],
-          image: "/lovable-uploads/28d236df-29cb-4a84-9446-11dd2ce41965.png"
+          image: "/lovable-uploads/723e13e5-b19b-4b93-97e4-631013abe92d.png"
         },
         {
           name: "Bluetooth Standard Kit (NCW-486700-BT-K)",
@@ -177,7 +177,7 @@ const Products = () => {
             "Instruction manual",
             "25 tests of each: Free Chlorine (DPD-1), Combined/Total Chlorine (DPD-3)"
           ],
-          image: "/lovable-uploads/28d236df-29cb-4a84-9446-11dd2ce41965.png"
+          image: "/lovable-uploads/b2a3e8b5-6890-4428-a229-acea57800f4e.png"
         }
       ]
     },
@@ -185,7 +185,7 @@ const Products = () => {
       id: "visual-testing-kits",
       title: "Visual Testing Kits",
       description: "Professional visual water testing kits for accurate water quality analysis in various settings.",
-      image: "/lovable-uploads/66b87e9c-21c7-4073-92a8-589f8554ee52.png",
+      image: "/lovable-uploads/a1f74804-36f8-4a85-b16e-47ff42591f16.png",
       products: [
         {
           name: "5-Way Water Check Eco Packs (NCW-480115) (W4H)",
