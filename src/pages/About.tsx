@@ -68,7 +68,7 @@ const About = () => {
       {/* Hero Section */}
       <HeroSection 
         title="About ENATECH"
-        subtitle="Pioneering sustainable water quality solutions through innovation and expertise"
+        subtitle="Revolutionizing sustainable water quality solutions through innovation and expertise"
         backgroundImage="/lovable-uploads/fc15edfe-9f31-4fbc-864c-6a9a5d07301b.png"
         overlayOpacity="medium"
         size="medium"
@@ -91,26 +91,27 @@ const About = () => {
             <AnimatedElement delay={300}>
               <div className="space-y-6">
                 <span className="text-enatech-blue font-medium px-4 py-1.5 bg-enatech-blue-light rounded-full text-sm">
-                  Our Story
+                  About Us
                 </span>
                 <h2 className="text-3xl md:text-4xl font-serif font-semibold text-gray-800 leading-tight">
                   A Vision for Smart Water Management
                 </h2>
                 <p className="text-gray-600">
-                  Founded in March 2025, ENATECH began with a mission to transform how communities and businesses 
-                  approach water resource management. Our founder, Eng. Nathan Etyang, recognized the growing 
-                  challenges of water scarcity and quality issues worldwide.
+                  ENATECH is a forward-thinking water solutions provider, dedicated to transforming how individuals, 
+                  communities, and industries manage and utilize water. Our mission is to ensure clean, safe, and 
+                  sustainable water through cutting-edge technology, innovative water quality testing and water 
+                  treatment solutions, and expert agricultural advisory services.
                 </p>
                 <p className="text-gray-600">
                   ENATECH's expertise covers, Smart irrigation planning, Solar Water Pumping Systems, Sustainable 
                   Water Use Strategies, Training and Capacity Building for Farmers.
                 </p>
-                <p className="text-gray-600">
+{/*                 <p className="text-gray-600">
                   ENATECH has an expert team of certified professionals with years of experience in water science 
                   and Agriculture, reliable State-of-the-art testing equipment and treatment systems, client 
                   focused and customized solutions to fit your specific needs and budget, sustainable Practices 
                   that promote eco-friendly and resource-efficient water use.
-                </p>
+                </p> */}
               </div>
             </AnimatedElement>
           </div>
