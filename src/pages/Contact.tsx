@@ -76,7 +76,7 @@ const Contact = () => {
       <HeroSection 
         title="Contact Us"
         subtitle="Get in touch with our team for consultations, quotes, or inquiries"
-        backgroundImage="/lovable-uploads/326185f4-3855-422a-bb5a-5e0a5973e512.png"
+        backgroundImage="/lovable-uploads/IMG-20250326-WA0009.jpg"
         size="small"
         alignment="left"
       />

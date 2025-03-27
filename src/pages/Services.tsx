@@ -109,7 +109,7 @@ const Services = () => {
       <HeroSection 
         title="Our Services"
         subtitle="Smart solutions for water quality, treatment, and agricultural advisory"
-        backgroundImage="/lovable-uploads/9e6049cf-cfb5-4cb7-8a72-bbb39e614f78.png"
+        backgroundImage="/lovable-uploads/cfc6fdd5-bc96-4202-8ced-5767e7d17c7b.png"
         size="medium"
       />
       

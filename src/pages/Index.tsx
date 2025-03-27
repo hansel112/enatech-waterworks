@@ -61,6 +61,31 @@ const Index = () => {
   // Product slider data - Updated with the requested products and their images
   const featuredProducts = [
     {
+      title: "Multi Meter Kit (NCW-486301-W4H)",
+      imageSrc: "/lovable-uploads/c1698f0e-6eb3-48e5-b782-501f8aa10e0a.png",
+      link: "/products#smart-digital-testing-kits"
+    },
+    {
+      title: "Bluetooth Photometer (NCW-486700-BT-W4H)",
+      imageSrc: "/lovable-uploads/f258aad8-5783-4cbf-bdbc-daa6450ecef8.png",
+      link: "/products#smart-digital-testing-kits"
+    },
+    {
+      title: "Bluetooth Well Drillers Kit (NCW-486700-BT-WD)",
+      imageSrc: "/lovable-uploads/59a21518-d699-468c-b068-9782f312d892.png",
+      link: "/products#smart-digital-testing-kits"
+    },
+    {
+      title: "Bluetooth Pool Kit (NCW-486700-BT-KP)",
+      imageSrc: "/lovable-uploads/e0974b0a-2ba8-4228-824e-d122e1b4488d.png",
+      link: "/products#smart-digital-testing-kits"
+    },
+    {
+      title: "Bluetooth Standard Kit (NCW-486700-BT-K)",
+      imageSrc: "/lovable-uploads/7ad22af4-e0a5-4155-b7c7-3bd8e02c0579.png",
+      link: "/products#smart-digital-testing-kits"
+    },
+    {
       title: "5-Way Water Check Eco Packs (NCW-480115) (W4H)",
       imageSrc: "/lovable-uploads/c66c7de0-b113-4ae5-a617-48b41b7a8bac.png",
       link: "/products#visual-testing-kits"
@@ -99,31 +124,6 @@ const Index = () => {
       title: "ITS Water Quality Test Kit (NCW-487986)",
       imageSrc: "/lovable-uploads/fa5c545e-3ebf-4c7d-84e5-c531e8647f3f.png",
       link: "/products#visual-testing-kits"
-    },
-    {
-      title: "Multi Meter Kit (NCW-486301-W4H)",
-      imageSrc: "/lovable-uploads/f258aad8-5783-4cbf-bdbc-daa6450ecef8.png",
-      link: "/products#smart-digital-testing-kits"
-    },
-    {
-      title: "Bluetooth Photometer (NCW-486700-BT-W4H)",
-      imageSrc: "/lovable-uploads/c1698f0e-6eb3-48e5-b782-501f8aa10e0a.png",
-      link: "/products#smart-digital-testing-kits"
-    },
-    {
-      title: "Bluetooth Well Drillers Kit (NCW-486700-BT-WD)",
-      imageSrc: "/lovable-uploads/59a21518-d699-468c-b068-9782f312d892.png",
-      link: "/products#smart-digital-testing-kits"
-    },
-    {
-      title: "Bluetooth Pool Kit (NCW-486700-BT-KP)",
-      imageSrc: "/lovable-uploads/e0974b0a-2ba8-4228-824e-d122e1b4488d.png",
-      link: "/products#smart-digital-testing-kits"
-    },
-    {
-      title: "Bluetooth Standard Kit (NCW-486700-BT-K)",
-      imageSrc: "/lovable-uploads/7ad22af4-e0a5-4155-b7c7-3bd8e02c0579.png",
-      link: "/products#smart-digital-testing-kits"
     }
   ];
 

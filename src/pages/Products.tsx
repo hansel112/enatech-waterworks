@@ -80,7 +80,7 @@ const Products = () => {
             "(Four AAA batteries sold separately)",
             "pH+ sample collection bottle"
           ],
-          image: "/lovable-uploads/f258aad8-5783-4cbf-bdbc-daa6450ecef8.png"
+          image: "/lovable-uploads/c1698f0e-6eb3-48e5-b782-501f8aa10e0a.png"
         },
         {
           name: "Bluetooth Photometer (NCW-486700-BT-W4H)",
@@ -107,7 +107,7 @@ const Products = () => {
             "App available in 10 languages",
             "4.25\"W x 7.25\"H x 2.25\"D | 10.8oz"
           ],
-          image: "/lovable-uploads/c1698f0e-6eb3-48e5-b782-501f8aa10e0a.png"
+          image: "/lovable-uploads/f258aad8-5783-4cbf-bdbc-daa6450ecef8.png"
         },
         {
           name: "Bluetooth Well Drillers Kit (NCW-486700-BT-WD)",
@@ -154,7 +154,7 @@ const Products = () => {
       id: "visual-testing-kits",
       title: "Visual Testing Kits",
       description: "Professional visual water testing kits for accurate water quality analysis in various settings.",
-      image: "/lovable-uploads/e0974b0a-2ba8-4228-824e-d122e1b4488d.png",
+      image: "/lovable-uploads/d93b3e4a-8ca5-48d6-b03c-1b6dadc9b818.png",
       products: [
         {
           name: "5-Way Water Check Eco Packs (NCW-480115) (W4H)",
@@ -280,7 +280,7 @@ const Products = () => {
       <HeroSection 
         title="Products & Equipment"
         subtitle="Professional water testing kits for accurate quality analysis"
-        backgroundImage="/lovable-uploads/aa128448-8e41-41fd-be53-942aaf2ee5b9.png"
+        backgroundImage="/lovable-uploads/ef956ade-0e64-430e-b58c-726187e21d80.png"
         size="medium"
       />
       
